@@ -8,6 +8,7 @@ import argparse
 import random
 import sys
 import re
+import wandb
 
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -28,13 +29,25 @@ parser.add_argument('--lr', default='0.0005', type=float)
 parser.add_argument('--resume_model_path', type=str, default=None)
 
 parser.add_argument('--num_f_maps', default='64', type=int)
-
+parser.add_argument('--wandb_group', type=str, default=None,
+                    help='Run group，例如 TUT-vs-C2F')
 parser.add_argument('--num_epochs', type=int)
 parser.add_argument('--num_layers_PG', type=int)
 parser.add_argument('--num_layers_R', type=int)
 parser.add_argument('--num_R', type=int)
 
+parser.add_argument('--use_wandb', action='store_true',
+                    help='Enable Weights & Biases logging')
+parser.add_argument('--wandb_project', type=str, default='MS-TCN2',
+                    help='W&B project name')
+
 args = parser.parse_args()
+
+# Initialize Weights & Biases if requested
+if args.use_wandb and args.action == "train":
+    wandb.init(project=args.wandb_project, config=vars(args))
+    wandb.run.name = f"{args.dataset}_split{args.split}"
+
 import re
 
 def find_latest_epoch(model_dir):
@@ -65,7 +78,7 @@ if args.dataset == "50salads":
 vid_list_file = "./data/"+args.dataset+"/splits/train.split"+args.split+".bundle"
 vid_list_file_eval = "./data/"+args.dataset+"/splits/val.split"+args.split+".bundle"
 vid_list_file_tst = "./data/"+args.dataset+"/splits/test.bundle"
-features_path = "./data/"+args.dataset+"/features_chopred_15fps/"
+features_path = "./data/"+args.dataset+"/features/"
 gt_path = "./data/"+args.dataset+"/groundtruth/"
 
 mapping_file = "./data/"+args.dataset+"/mapping.txt"
@@ -104,6 +117,8 @@ if args.action == "train":
         learning_rate=lr,
         device=device
     )
+    if args.use_wandb:
+        wandb.finish()
 
 
 if args.action == "predict":
@@ -139,26 +154,30 @@ if args.action == "predict":
         model_dir_split = os.path.join("models", args.dataset, f"split_{split}")
         results_dir_split = os.path.join("results", args.dataset, f"split_{split}")
 
-        # select epoch
-        if args.resume_model_path:
-            predict_epoch = int(args.resume_model_path.split('-')[-1].split('.')[0])
+        # select model file (prefer best_model.pth)
+        best_model = os.path.join(model_dir_split, "best_model.pth")
+        if os.path.isfile(best_model):
+            model_file = best_model
+            print(f"✅ Using best_model.pth for split {split}")
+        elif args.resume_model_path:
+            model_file = args.resume_model_path
+            print(f"✅ Using resume_model_path: {model_file}")
         else:
-            predict_epoch = find_latest_epoch(model_dir_split)
-            if predict_epoch is None:
-                raise ValueError(f"No epoch-*.model files found in {model_dir_split}")
-        print(f"✅ Auto-selected epoch {predict_epoch} for split {split}")
+            latest_epoch = find_latest_epoch(model_dir_split)
+            if latest_epoch is None:
+                raise ValueError(f"No epoch model files found in {model_dir_split}")
+            model_file = os.path.join(model_dir_split, f"epoch-{latest_epoch}.model")
+            print(f"✅ Auto-selected epoch {latest_epoch} for split {split}")
 
         # run prediction
         batch_gen_eval = BatchGenerator(num_classes, actions_dict, gt_path, features_path, sample_rate)
         batch_gen_eval.read_data(vid_list_file_tst)
         metrics = trainer.predict(
-            model_dir_split,
+            model_file,
             results_dir_split,
             features_path,
             batch_gen_eval,
-            predict_epoch,
             actions_dict,
-            device,
             sample_rate
         )
         all_metrics[split] = metrics

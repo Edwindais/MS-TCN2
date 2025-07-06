@@ -69,22 +69,30 @@ class BatchGenerator(object):
             batch_input.append(feat_ds)
             batch_target.append(tgt_ds)
 
-        # 5) 计算本 batch 的最长长度，并构造输出张量
+        # 5) 计算对齐后各样本长度（裁剪到 feat 和 label 的较短者）
+        true_lengths = []
+        for feat, tgt in zip(batch_input, batch_target):
+            true_lengths.append(min(feat.size(1), tgt.size(0)))
+        L = max(true_lengths)           # 本 batch 统一长度
+
+        # 6) 预分配张量
         B = len(batch_input)
         C = batch_input[0].size(0)
-        lengths = [tgt.size(0) for tgt in batch_target]
-        L = max(lengths)
-
         batch_input_tensor  = torch.zeros(B, C, L, dtype=torch.float)
         batch_target_tensor = torch.ones(B, L, dtype=torch.long) * -100
         mask                = torch.zeros(B, self.num_classes, L, dtype=torch.float)
 
-        # 6) 填充每个样本
+        # 7) 填充（先裁剪到各自最短 true_len）
         for i in range(B):
-            Ti = batch_input[i].size(1)
-            batch_input_tensor[i, :, :Ti]    = batch_input[i]
-            batch_target_tensor[i, :lengths[i]] = batch_target[i]
-            mask[i, :, :lengths[i]] = 1.0
+            feat = batch_input[i]
+            tgt  = batch_target[i]
+            Ti   = feat.size(1)
+            Tj   = tgt.size(0)
+            Li   = min(Ti, Tj)          # 统一裁剪长度
 
-        # 7) 返回四元组：输入、标签、mask、以及原始 vid 列表
+            batch_input_tensor[i, :, :Li] = feat[:, :Li]
+            batch_target_tensor[i, :Li]   = tgt[:Li]
+            mask[i, :, :Li]               = 1.0
+
+        # 8) 返回四元组：输入、标签、mask、以及原始 vid 列表
         return batch_input_tensor, batch_target_tensor, mask, batch

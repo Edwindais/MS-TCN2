@@ -1,0 +1,54 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        m: []
+        python_version: 3.10.16
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+            "2":
+                - 1
+                - 5
+                - 53
+            "3":
+                - 2
+                - 16
+                - 17
+                - 55
+                - 61
+            "4": 3.10.16
+            "5": 0.20.1
+            "12": 0.20.1
+            "13": linux-x86_64
+action:
+    value: train
+bz:
+    value: 1
+dataset:
+    value: surgery_I3D_new
+features_dim:
+    value: 1024
+lr:
+    value: 0.0003
+num_R:
+    value: 3
+num_epochs:
+    value: 160
+num_f_maps:
+    value: 64
+num_layers_PG:
+    value: 13
+num_layers_R:
+    value: 12
+resume_model_path:
+    value: null
+split:
+    value: "5"
+use_wandb:
+    value: true
+wandb_group:
+    value: MSTCN++
+wandb_project:
+    value: MSTCN++

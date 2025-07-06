@@ -14,10 +14,13 @@ import utils
 from sklearn.metrics import accuracy_score, f1_score, balanced_accuracy_score, average_precision_score
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
-import os
+import os  # (already imported above; keep single import)
 import matplotlib
 import numpy as np
 from matplotlib import font_manager
+# ===== Edit Distance Metric =====
+import wandb
+import pandas as pd
 # ===== Edit Distance Metric =====
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 class MS_TCN2(nn.Module):
@@ -200,6 +203,17 @@ class Trainer:
             while batch_gen.has_next():
                 batch_input, batch_target, mask, batch = batch_gen.next_batch(batch_size)
                 batch_input, batch_target, mask = batch_input.to(device), batch_target.to(device), mask.to(device)
+                # ---- Align lengths: crop to the shorter of input / ground‑truth ----
+                seq_len_inp = batch_input.size(2)          # T of features
+                seq_len_tgt = batch_target.size(1)         # T of labels
+                if seq_len_inp != seq_len_tgt:
+                    if seq_len_inp < seq_len_tgt:
+                        print(f"[Warning] Input length {seq_len_inp} < Target length {seq_len_tgt}, cropping target.")
+
+                    min_len          = min(seq_len_inp, seq_len_tgt)
+                    batch_input      = batch_input[:, :, :min_len]
+                    batch_target     = batch_target[:, :min_len]
+                    mask             = mask[:, :, :min_len]
 
                 optimizer.zero_grad()
                 predictions = self.model(batch_input)
@@ -239,6 +253,14 @@ class Trainer:
             writer.add_scalar('Accuracy/train', train_acc, epoch + 1)
             writer.add_scalar('Learning_rate', scheduler.get_last_lr()[0], epoch + 1)
 
+            # Log training metrics to W&B if active
+            if wandb.run:
+                wandb.log({
+                    'train/loss': avg_loss,
+                    'train/accuracy': train_acc,
+                    'epoch': epoch + 1
+                }, step=epoch + 1)
+
             # Validation and early stopping every 10 epochs
             if (epoch + 1) % 20 == 0:
                 val_loss, val_acc, val_bal_acc = self.test(val_batch_gen, batch_size, device)
@@ -248,6 +270,13 @@ class Trainer:
                 writer.add_scalar('BalancedAccuracy/val', val_bal_acc, epoch + 1)
                 torch.save(self.model.state_dict(), save_dir + "/epoch-" + str(epoch + 1) + ".model")
                 torch.save(optimizer.state_dict(), save_dir + "/epoch-" + str(epoch + 1) + ".opt")
+                # Log validation metrics to W&B if active
+                if wandb.run:
+                    wandb.log({
+                        'val/loss': val_loss,
+                        'val/accuracy': val_acc,
+                        'val/balanced_accuracy': val_bal_acc
+                    }, step=epoch + 1)
                 # Early stopping logic only triggered when validation is run
                 if val_bal_acc > best_val_bal_acc:
                     best_val_bal_acc = val_bal_acc
@@ -286,6 +315,13 @@ class Trainer:
             while val_batch_gen.has_next():
                 batch_input, batch_target, mask,batch = val_batch_gen.next_batch(batch_size)
                 batch_input, batch_target, mask = batch_input.to(device), batch_target.to(device), mask.to(device)
+                seq_inp = batch_input.size(2)
+                seq_tgt = batch_target.size(1)
+                if seq_inp != seq_tgt:
+                    L = min(seq_inp, seq_tgt)
+                    batch_input  = batch_input[:, :, :L]
+                    batch_target = batch_target[:, :L]
+                    mask         = mask[:, :, :L]
                 predictions = self.model(batch_input)
 
                 loss = 0
@@ -312,6 +348,14 @@ class Trainer:
         avg_loss = total_loss / len(val_batch_gen.list_of_examples)
         accuracy = float(correct) / total if total > 0 else 0
         balanced_acc = balanced_accuracy_score(all_targets, all_preds)
+
+        # Log evaluation metrics to W&B if active
+        if wandb.run:
+            wandb.log({
+                'eval/loss': total_loss / len(val_batch_gen.list_of_examples),
+                'eval/accuracy': accuracy,
+                'eval/balanced_accuracy': balanced_acc
+            })
 
         print("Predicted labels distribution:", np.unique(all_preds, return_counts=True))
         print("True labels distribution:", np.unique(all_targets, return_counts=True))
@@ -343,6 +387,9 @@ class Trainer:
             ax4.plot(range(len(confidence)), confidence)
             ax4.plot(range(len(confidence)), [0.3] * len(confidence), color='red', label='0.5')
 
+        # ---- Ensure output directory exists ----
+        if save_path is not None:
+            os.makedirs(os.path.dirname(save_path), exist_ok=True)
         if save_path is not None:
             plt.savefig(save_path)
         else:
@@ -372,12 +419,10 @@ class Trainer:
         # 给 legend 预留 20% 宽度
         fig.subplots_adjust(left=0.05, right=0.80, top=0.90, bottom=0.10, hspace=0.25)
 
-        # ---------- 颜色 ----------
-        label_colors = {
-            0:'#1f77b4', 1:'#aec7e8', 2:'#ffbb78', 3:'#98df8a',
-            4:'#ff9896', 5:'#c5b0d5', 6:'#8c564b', 7:'#e377c2',
-            8:'#7f7f7f', 9:'#bcbd22', 10:'#17becf', 11:'#9edae5'
-        }
+        # ---------- Color palette (Blues) ----------
+        base = plt.get_cmap("Blues")
+        palette = [base(0.2 + 0.6*i/11) for i in range(12)]  # values from 0.2 to 0.8
+        label_colors = {i: palette[i] for i in range(12)}
 
         # ---------- Pred / GT 条纹 ----------
         for i, row in enumerate([pred, gt]):
@@ -423,20 +468,24 @@ class Trainer:
         )
 
         # ---------- 保存 ----------
+        # ---- Ensure output directory exists ----
+        os.makedirs(save_path, exist_ok=True)
         save_file = os.path.join(save_path, f"{name}_comparison.pdf")
         plt.savefig(save_file, format="pdf", bbox_inches="tight")
         plt.close()
 
-    def predict(self, model_dir, results_dir, features_path, batch_gen_tst, epoch, actions_dict, device, sample_rate):
+    def predict(self, model_file, results_dir, features_path, batch_gen_tst, actions_dict, sample_rate):
         import os, time
         import torch.nn.functional as F
 
         self.model.eval()
+        # Load specified checkpoint file
         self.model.to(device)
-        ckpt_path = os.path.join(model_dir, f"epoch-{epoch}.model")
-        self.model.load_state_dict(torch.load(ckpt_path, map_location=device))
+        self.model.load_state_dict(torch.load(model_file, map_location=device))
         batch_gen_tst.reset()
         all_preds, all_gts = [], []
+        # will collect one dict per video frame
+        top5_records = []
         t0 = time.time()
 
         while batch_gen_tst.has_next():
@@ -445,9 +494,15 @@ class Trainer:
 
             inp  = inp.to(device)  # (1, C, T)
             mask = mask.to(device)
+            if inp.size(2) != tgt.size(1):
+                L = min(inp.size(2), tgt.size(1))
+                inp  = inp[:, :, :L]
+                tgt  = tgt[:, :L]
+                mask = mask[:, :, :L]
 
             outputs = self.model(inp)  # list of (1, num_classes, T)
 
+            # --- Iterate over stages, but suppress per-stage metrics printing ---
             for stage_idx, out in enumerate(outputs):
                 # 得到每帧置信度和预测结果
                 prob      = F.softmax(out, dim=1)            # (1, K, T)
@@ -455,7 +510,7 @@ class Trainer:
                 conf_np   = conf.detach().squeeze(0).cpu().numpy().tolist()
                 pred_np   = pred.detach().squeeze(0).cpu().numpy().astype(int)
                 tgt_np    = tgt.squeeze(0).cpu().numpy().astype(int)
-
+                # --- Per-stage metrics computation and print removed ---
                 # 5.1) 时序热力图 + confidence
                 heat_save = os.path.join(results_dir, f"{vid}_stage{stage_idx}.png")
                 self.segment_bars_with_confidence(
@@ -475,132 +530,159 @@ class Trainer:
                         save_path=results_dir,
                         actions_dict=actions_dict
                     )
+                    # ---- Gather per‑frame top‑5 class IDs and probabilities ----
+                    top_prob, top_idx = torch.topk(prob, k=5, dim=1)          # (1, 5, T)
+                    top_prob_np = top_prob.detach().squeeze(0).cpu().numpy()  # (5, T)
+                    top_idx_np  = top_idx.detach().squeeze(0).cpu().numpy()   # (5, T)
+
+                    for t in range(top_prob_np.shape[1]):
+                        rec = {
+                            "video": vid,
+                            "frame": int(t),
+                            "time_frame": float(t) / sample_rate,
+                        }
+                        # top‑5 labels & probs
+                        for i in range(5):
+                            rec[f"top{i+1}_cls"]  = int(top_idx_np[i, t])
+                            rec[f"top{i+1}_prob"] = float(top_prob_np[i, t])
+                        top5_records.append(rec)
                 # Write frame-level predictions to .txt for evaluation
                 txt_path = os.path.join(results_dir, f"{vid}.txt")
                 with open(txt_path, "w") as f:
                     f.write("### Frame level recognition: ###\n")
                     f.write(" ".join(map(str, pred_np.tolist())))
 
+            # --- Print per-video metrics once ---
+            final_acc_vid = accuracy_score(tgt_np, pred_np)
+            final_bal_vid = balanced_accuracy_score(tgt_np, pred_np)
+            print(f"[{vid}] Frame-level Acc: {final_acc_vid:.4f}, Balanced-Acc: {final_bal_vid:.4f}")
+
             all_preds.extend(pred_np.tolist())
             all_gts.extend(tgt_np.tolist())
 
-            acc = accuracy_score(all_gts, all_preds)
-            f1  = f1_score(all_gts, all_preds, average='macro')
-            bal = balanced_accuracy_score(all_gts, all_preds)
-            # mAP
-            K = len(actions_dict)
-            gt_oh   = np.eye(K)[all_gts]
-            pred_oh = np.eye(K)[all_preds]
-            mAP = average_precision_score(gt_oh, pred_oh, average='macro')
+        # ---- Save per‑frame top‑5 confidence table ----
+        if top5_records:
+            df_top5 = pd.DataFrame(top5_records)
+            csv_path = os.path.join(results_dir, "per_frame_top5_confidence.csv")
+            df_top5.to_csv(csv_path, index=False)
+            print(f"📝 Saved per‑frame top‑5 confidences to {csv_path}")
 
-            # ===== 新增：分段级 F1 @ IoU 阈值 10%,25%,50% =====
-            def extract_segments(labels):
-                """
-                将一维标签序列合并成 [(label, start_frame, end_frame), …]
-                """
-                segments = []
-                start = 0
-                curr = labels[0]
-                for i, l in enumerate(labels[1:], 1):
-                    if l != curr:
-                        segments.append((curr, start, i-1))
-                        curr = l
-                        start = i
-                segments.append((curr, start, len(labels)-1))
-                return segments
+        # Compute metrics after all videos are processed
+        acc = accuracy_score(all_gts, all_preds)
+        f1  = f1_score(all_gts, all_preds, average='macro')
+        bal = balanced_accuracy_score(all_gts, all_preds)
+        # mAP
+        K = len(actions_dict)
+        gt_oh   = np.eye(K)[all_gts]
+        pred_oh = np.eye(K)[all_preds]
+        mAP = average_precision_score(gt_oh, pred_oh, average='macro')
 
-            def segment_iou(seg1, seg2):
-                """计算两个段 (s1,e1) 与 (s2,e2) 的 IoU"""
-                s1, e1 = seg1
-                s2, e2 = seg2
-                inter = max(0, min(e1,e2) - max(s1,s2) + 1)
-                union = (e1 - s1 + 1) + (e2 - s2 + 1) - inter
-                return inter / union if union>0 else 0
+        # ===== Segment-level F1 @ IoU thresholds 10%,25%,50% =====
+        def extract_segments(labels):
+            """
+            将一维标签序列合并成 [(label, start_frame, end_frame), …]
+            """
+            segments = []
+            start = 0
+            curr = labels[0]
+            for i, l in enumerate(labels[1:], 1):
+                if l != curr:
+                    segments.append((curr, start, i-1))
+                    curr = l
+                    start = i
+            segments.append((curr, start, len(labels)-1))
+            return segments
 
-            def segment_f1_score(y_true, y_pred, iou_thr):
-                gt_segs   = extract_segments(y_true)
-                pred_segs = extract_segments(y_pred)
+        def segment_iou(seg1, seg2):
+            """计算两个段 (s1,e1) 与 (s2,e2) 的 IoU"""
+            s1, e1 = seg1
+            s2, e2 = seg2
+            inter = max(0, min(e1,e2) - max(s1,s2) + 1)
+            union = (e1 - s1 + 1) + (e2 - s2 + 1) - inter
+            return inter / union if union>0 else 0
 
-                # 按 label 分组
-                gt_by_lab   = {}
-                pred_by_lab = {}
-                for lab,s,e in gt_segs:   gt_by_lab.setdefault(lab, []).append((s,e))
-                for lab,s,e in pred_segs: pred_by_lab.setdefault(lab, []).append((s,e))
+        def segment_f1_score(y_true, y_pred, iou_thr):
+            gt_segs   = extract_segments(y_true)
+            pred_segs = extract_segments(y_pred)
 
-                TP = FP = FN = 0
-                for lab, p_segs in pred_by_lab.items():
-                    gt_list = gt_by_lab.get(lab, [])
-                    for ps in p_segs:
-                        # 找到同 label 下最大的 IoU
-                        best_iou = max((segment_iou(ps, gs) for gs in gt_list), default=0)
-                        if best_iou >= iou_thr:
-                            TP += 1
-                        else:
-                            FP += 1
-                for lab, g_segs in gt_by_lab.items():
-                    p_list = pred_by_lab.get(lab, [])
-                    for gs in g_segs:
-                        best_iou = max((segment_iou(gs, ps) for ps in p_list), default=0)
-                        if best_iou < iou_thr:
-                            FN += 1
+            # 按 label 分组
+            gt_by_lab   = {}
+            pred_by_lab = {}
+            for lab,s,e in gt_segs:   gt_by_lab.setdefault(lab, []).append((s,e))
+            for lab,s,e in pred_segs: pred_by_lab.setdefault(lab, []).append((s,e))
 
-                prec = TP / (TP+FP) if TP+FP>0 else 0
-                rec  = TP / (TP+FN) if TP+FN>0 else 0
-                f1   = 2*prec*rec/(prec+rec) if prec+rec>0 else 0
-                return f1
+            TP = FP = FN = 0
+            for lab, p_segs in pred_by_lab.items():
+                gt_list = gt_by_lab.get(lab, [])
+                for ps in p_segs:
+                    # 找到同 label 下最大的 IoU
+                    best_iou = max((segment_iou(ps, gs) for gs in gt_list), default=0)
+                    if best_iou >= iou_thr:
+                        TP += 1
+                    else:
+                        FP += 1
+            for lab, g_segs in gt_by_lab.items():
+                p_list = pred_by_lab.get(lab, [])
+                for gs in g_segs:
+                    best_iou = max((segment_iou(gs, ps) for ps in p_list), default=0)
+                    if best_iou < iou_thr:
+                        FN += 1
 
-            iou_thresholds = [0.10, 0.25, 0.50]
-            f1_seg = {}
-            for thr in iou_thresholds:
-                f1_seg[thr] = segment_f1_score(all_gts, all_preds, thr)
+            prec = TP / (TP+FP) if TP+FP>0 else 0
+            rec  = TP / (TP+FN) if TP+FN>0 else 0
+            f1   = 2*prec*rec/(prec+rec) if prec+rec>0 else 0
+            return f1
 
-            # ===== 新增：Edit Distance Metric =====
-            def levenshtein_norm(p, t):
-                # 删除连续重复项
-                def dedup(seq):
-                    new = [seq[0]]
-                    for s in seq[1:]:
-                        if s != new[-1]:
-                            new.append(s)
-                    return new
-                p, t = dedup(p), dedup(t)
-                n, m = len(p), len(t)
-                if n == 0: return 0.0
-                D = np.zeros((n+1, m+1), dtype=np.uint16)
-                for i in range(n+1): D[i][0] = i
-                for j in range(m+1): D[0][j] = j
-                for i in range(1, n+1):
-                    for j in range(1, m+1):
-                        cost = 0 if p[i-1] == t[j-1] else 1
-                        D[i][j] = min(D[i-1][j]+1, D[i][j-1]+1, D[i-1][j-1]+cost)
-                norm_dist = 1 - D[n][m] / max(n, m)
-                return norm_dist
+        iou_thresholds = [0.10, 0.25, 0.50]
+        f1_seg = {}
+        for thr in iou_thresholds:
+            f1_seg[thr] = segment_f1_score(all_gts, all_preds, thr)
 
-            edit_score = levenshtein_norm(all_preds, all_gts)
+        # ===== Edit Distance Metric =====
+        def levenshtein_norm(p, t):
+            # 删除连续重复项
+            def dedup(seq):
+                new = [seq[0]]
+                for s in seq[1:]:
+                    if s != new[-1]:
+                        new.append(s)
+                return new
+            p, t = dedup(p), dedup(t)
+            n, m = len(p), len(t)
+            if n == 0: return 0.0
+            D = np.zeros((n+1, m+1), dtype=np.uint16)
+            for i in range(n+1): D[i][0] = i
+            for j in range(m+1): D[0][j] = j
+            for i in range(1, n+1):
+                for j in range(1, m+1):
+                    cost = 0 if p[i-1] == t[j-1] else 1
+                    D[i][j] = min(D[i-1][j]+1, D[i][j-1]+1, D[i-1][j-1]+cost)
+            norm_dist = 1 - D[n][m] / max(n, m)
+            return norm_dist
 
-            # ===== 打印所有指标 =====
-            t1 = time.time()
-            print(f"✔️ Prediction Finished in {t1-t0:.2f}s")
-            print(f"📊 Frame-level Accuracy:          {acc:.4f}")
-            print(f"📈 Frame-level F1 (macro):        {f1:.4f}")
-            print(f"🔄 Frame-level Balanced-Acc:      {bal:.4f}")
-            print(f"⭐ Frame-level mAP:               {mAP:.4f}")
-            for thr, val in f1_seg.items():
-                pct = int(thr*100)
-                print(f"🎯 Segment-level F1 @ IoU {pct}%:   {val:.4f}")
-            print(f"✏️ Segment-level Edit Score:      {edit_score:.4f}")
+        edit_score = levenshtein_norm(all_preds, all_gts)
 
-  
-            # ===== Return metrics as dict =====
-            metrics = {
-                "frame_acc": acc,
-                "frame_f1": f1,
-                "frame_balanced_acc": bal,
-                "frame_mAP": mAP,
-                "edit_score": edit_score,
-            }
-            for thr, val in f1_seg.items():
-                metrics[f"segment_f1_iou_{int(thr*100)}"] = val
-        
-            return metrics
+        # ===== 打印所有指标 =====
+        t1 = time.time()
+        print(f"✔️ Prediction Finished in {t1-t0:.2f}s")
+        print(f"📊 Frame-level Accuracy:          {acc:.4f}")
+        print(f"📈 Frame-level F1 (macro):        {f1:.4f}")
+        print(f"🔄 Frame-level Balanced-Acc:      {bal:.4f}")
+        print(f"⭐ Frame-level mAP:               {mAP:.4f}")
+        for thr, val in f1_seg.items():
+            pct = int(thr*100)
+            print(f"🎯 Segment-level F1 @ IoU {pct}%:   {val:.4f}")
+        print(f"✏️ Segment-level Edit Score:      {edit_score:.4f}")
+
+        # ===== Return metrics as dict =====
+        metrics = {
+            "frame_acc": acc,
+            "frame_f1": f1,
+            "frame_balanced_acc": bal,
+            "frame_mAP": mAP,
+            "edit_score": edit_score,
+        }
+        for thr, val in f1_seg.items():
+            metrics[f"segment_f1_iou_{int(thr*100)}"] = val
+        return metrics
      
