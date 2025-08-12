@@ -6,3 +6,22 @@ __pycache__/
 *.ckpt
 runs/
 tensorboard_logs/
+__pycache__/
+*.pt
+*.pth
+*.model
+*.opt
+*.ckpt
+
+# 训练/评估输出
+results/
+wandb/
+train_log/
+logs/
+
+# 图片&报告
+*.png
+*.pdf
+*.jpg
+*.jpeg
+*.gif
