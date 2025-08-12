@@ -1,0 +1,22 @@
+{"time":"2025-06-18T10:16:21.696632714+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/hdd2/Projects_dai/Projects_dai/MS-TCN2_dai/wandb/run-20250618_101621-as400wlf/logs/debug-core.log"}
+{"time":"2025-06-18T10:16:22.014571486+08:00","level":"INFO","msg":"stream: created new stream","id":"as400wlf"}
+{"time":"2025-06-18T10:16:22.014632518+08:00","level":"INFO","msg":"stream: started","id":"as400wlf"}
+{"time":"2025-06-18T10:16:22.014638577+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"as400wlf"}
+{"time":"2025-06-18T10:16:22.014651327+08:00","level":"INFO","msg":"handler: started","stream_id":"as400wlf"}
+{"time":"2025-06-18T10:16:22.014674822+08:00","level":"INFO","msg":"sender: started","stream_id":"as400wlf"}
+{"time":"2025-06-18T10:16:22.338066052+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-18T10:19:56.198532795+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":20,"current":21}
+{"time":"2025-06-18T10:23:31.748901123+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":40,"current":41}
+{"time":"2025-06-18T10:27:06.193706793+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":60,"current":61}
+{"time":"2025-06-18T10:30:40.760112896+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":80,"current":81}
+{"time":"2025-06-18T10:34:15.284096696+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":100,"current":101}
+{"time":"2025-06-18T10:37:47.527958573+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":120,"current":121}
+{"time":"2025-06-18T10:37:47.529335703+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-18T10:37:47.529354791+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-18T10:37:48.530792738+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.508791842,"progress":"896B/896B"}],"total_operations":1}}
+{"time":"2025-06-18T10:37:48.74702612+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-18T10:37:49.006718923+08:00","level":"INFO","msg":"stream: closing","id":"as400wlf"}
+{"time":"2025-06-18T10:37:49.006731962+08:00","level":"INFO","msg":"handler: closed","stream_id":"as400wlf"}
+{"time":"2025-06-18T10:37:49.006740174+08:00","level":"INFO","msg":"sender: closed","stream_id":"as400wlf"}
+{"time":"2025-06-18T10:37:49.00673739+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"as400wlf"}
+{"time":"2025-06-18T10:37:49.00677784+08:00","level":"INFO","msg":"stream: closed","id":"as400wlf"}

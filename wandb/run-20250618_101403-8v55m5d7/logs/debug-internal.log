@@ -1,0 +1,7 @@
+{"time":"2025-06-18T10:14:03.318440787+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/hdd2/Projects_dai/Projects_dai/MS-TCN2_dai/wandb/run-20250618_101403-8v55m5d7/logs/debug-core.log"}
+{"time":"2025-06-18T10:14:03.630016359+08:00","level":"INFO","msg":"stream: created new stream","id":"8v55m5d7"}
+{"time":"2025-06-18T10:14:03.630084171+08:00","level":"INFO","msg":"stream: started","id":"8v55m5d7"}
+{"time":"2025-06-18T10:14:03.630104632+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"8v55m5d7"}
+{"time":"2025-06-18T10:14:03.630175709+08:00","level":"INFO","msg":"sender: started","stream_id":"8v55m5d7"}
+{"time":"2025-06-18T10:14:03.630221058+08:00","level":"INFO","msg":"handler: started","stream_id":"8v55m5d7"}
+{"time":"2025-06-18T10:14:03.976344614+08:00","level":"INFO","msg":"Starting system monitor"}

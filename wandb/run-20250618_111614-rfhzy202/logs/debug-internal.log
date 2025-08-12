@@ -1,0 +1,22 @@
+{"time":"2025-06-18T11:16:14.88375844+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/hdd2/Projects_dai/Projects_dai/MS-TCN2_dai/wandb/run-20250618_111614-rfhzy202/logs/debug-core.log"}
+{"time":"2025-06-18T11:16:15.192379656+08:00","level":"INFO","msg":"stream: created new stream","id":"rfhzy202"}
+{"time":"2025-06-18T11:16:15.192426908+08:00","level":"INFO","msg":"stream: started","id":"rfhzy202"}
+{"time":"2025-06-18T11:16:15.192468452+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"rfhzy202"}
+{"time":"2025-06-18T11:16:15.192509975+08:00","level":"INFO","msg":"handler: started","stream_id":"rfhzy202"}
+{"time":"2025-06-18T11:16:15.192557077+08:00","level":"INFO","msg":"sender: started","stream_id":"rfhzy202"}
+{"time":"2025-06-18T11:16:15.503833729+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-18T11:19:46.483583225+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":20,"current":21}
+{"time":"2025-06-18T11:23:14.532158808+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":40,"current":41}
+{"time":"2025-06-18T11:26:45.392442385+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":60,"current":61}
+{"time":"2025-06-18T11:30:15.333198401+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":80,"current":81}
+{"time":"2025-06-18T11:33:45.538939447+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":100,"current":101}
+{"time":"2025-06-18T11:37:14.89321908+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":120,"current":121}
+{"time":"2025-06-18T11:37:14.895045164+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-18T11:37:14.895087467+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-18T11:37:15.895984967+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading config.yaml","runtime_seconds":0.546996555,"progress":"896B/896B"}],"total_operations":1}}
+{"time":"2025-06-18T11:37:16.107633878+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-18T11:37:16.582858541+08:00","level":"INFO","msg":"stream: closing","id":"rfhzy202"}
+{"time":"2025-06-18T11:37:16.582871471+08:00","level":"INFO","msg":"handler: closed","stream_id":"rfhzy202"}
+{"time":"2025-06-18T11:37:16.58287783+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"rfhzy202"}
+{"time":"2025-06-18T11:37:16.582915207+08:00","level":"INFO","msg":"sender: closed","stream_id":"rfhzy202"}
+{"time":"2025-06-18T11:37:16.582945292+08:00","level":"INFO","msg":"stream: closed","id":"rfhzy202"}

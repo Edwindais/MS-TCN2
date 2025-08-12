@@ -1,0 +1,8 @@
+__pycache__/
+*.pt
+*.pth
+*.model
+*.opt
+*.ckpt
+runs/
+tensorboard_logs/

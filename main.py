@@ -69,7 +69,7 @@ num_R = args.num_R
 num_f_maps = args.num_f_maps
 
 # use the full temporal resolution @ 15fps
-sample_rate = 1
+c
 # sample input features @ 15fps instead of 30 fps
 # for 50salads, and up-sample the output to 30 fps
 if args.dataset == "50salads":

@@ -1,0 +1,24 @@
+{"time":"2025-07-02T21:48:15.56060039+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/hdd2/Projects_dai/Projects_dai/MS-TCN2_dai/wandb/run-20250702_214815-8o8k32p2/logs/debug-core.log"}
+{"time":"2025-07-02T21:48:15.876594255+08:00","level":"INFO","msg":"stream: created new stream","id":"8o8k32p2"}
+{"time":"2025-07-02T21:48:15.876630249+08:00","level":"INFO","msg":"stream: started","id":"8o8k32p2"}
+{"time":"2025-07-02T21:48:15.876667785+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"8o8k32p2"}
+{"time":"2025-07-02T21:48:15.876701927+08:00","level":"INFO","msg":"handler: started","stream_id":"8o8k32p2"}
+{"time":"2025-07-02T21:48:15.876732583+08:00","level":"INFO","msg":"sender: started","stream_id":"8o8k32p2"}
+{"time":"2025-07-02T21:48:16.203569931+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-02T21:51:11.637302399+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":20,"current":21}
+{"time":"2025-07-02T21:54:03.742958019+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":40,"current":41}
+{"time":"2025-07-02T21:56:56.006552389+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":60,"current":61}
+{"time":"2025-07-02T21:59:49.814707439+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":80,"current":81}
+{"time":"2025-07-02T22:02:42.107808638+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":100,"current":101}
+{"time":"2025-07-02T22:05:36.864350758+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":120,"current":121}
+{"time":"2025-07-02T22:08:28.497190389+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":140,"current":141}
+{"time":"2025-07-02T22:11:19.847345728+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":160,"current":161}
+{"time":"2025-07-02T22:11:19.9243206+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-02T22:11:19.924362292+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-02T22:11:20.655682443+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-02T22:11:20.908509354+08:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-07-02T22:11:20.910588103+08:00","level":"INFO","msg":"stream: closing","id":"8o8k32p2"}
+{"time":"2025-07-02T22:11:20.910594532+08:00","level":"INFO","msg":"handler: closed","stream_id":"8o8k32p2"}
+{"time":"2025-07-02T22:11:20.91059946+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8o8k32p2"}
+{"time":"2025-07-02T22:11:20.91061299+08:00","level":"INFO","msg":"sender: closed","stream_id":"8o8k32p2"}
+{"time":"2025-07-02T22:11:20.910636135+08:00","level":"INFO","msg":"stream: closed","id":"8o8k32p2"}

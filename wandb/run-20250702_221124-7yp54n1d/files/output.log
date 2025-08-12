@@ -1,0 +1,348 @@
+Epoch 1/160: 100%|██████████| 82/82 [00:09<00:00,  9.05it/s]
+2025-07-02 22:11:35.463 | INFO     | model:train:251 - [epoch 1]: epoch loss = 9.286156,   acc = 0.174282
+[epoch 1]: epoch loss = 9.286156,   acc = 0.174282
+Epoch 2/160: 100%|██████████| 82/82 [00:08<00:00,  9.64it/s]
+2025-07-02 22:11:44.003 | INFO     | model:train:251 - [epoch 2]: epoch loss = 8.315004,   acc = 0.216461
+[epoch 2]: epoch loss = 8.315004,   acc = 0.216461
+Epoch 3/160: 100%|██████████| 82/82 [00:08<00:00,  9.67it/s]
+2025-07-02 22:11:52.564 | INFO     | model:train:251 - [epoch 3]: epoch loss = 6.850982,   acc = 0.391976
+[epoch 3]: epoch loss = 6.850982,   acc = 0.391976
+Epoch 4/160: 100%|██████████| 82/82 [00:08<00:00,  9.71it/s]
+2025-07-02 22:12:01.049 | INFO     | model:train:251 - [epoch 4]: epoch loss = 5.672749,   acc = 0.552860
+[epoch 4]: epoch loss = 5.672749,   acc = 0.552860
+Epoch 5/160: 100%|██████████| 82/82 [00:08<00:00,  9.68it/s]
+2025-07-02 22:12:09.598 | INFO     | model:train:251 - [epoch 5]: epoch loss = 5.342877,   acc = 0.596564
+[epoch 5]: epoch loss = 5.342877,   acc = 0.596564
+Epoch 6/160: 100%|██████████| 82/82 [00:08<00:00,  9.72it/s]
+2025-07-02 22:12:18.104 | INFO     | model:train:251 - [epoch 6]: epoch loss = 4.737364,   acc = 0.647072
+[epoch 6]: epoch loss = 4.737364,   acc = 0.647072
+Epoch 7/160: 100%|██████████| 82/82 [00:08<00:00,  9.66it/s]
+2025-07-02 22:12:27.114 | INFO     | model:train:251 - [epoch 7]: epoch loss = 4.413466,   acc = 0.680233
+[epoch 7]: epoch loss = 4.413466,   acc = 0.680233
+Epoch 8/160: 100%|██████████| 82/82 [00:08<00:00,  9.52it/s]
+2025-07-02 22:12:35.801 | INFO     | model:train:251 - [epoch 8]: epoch loss = 4.143639,   acc = 0.700149
+[epoch 8]: epoch loss = 4.143639,   acc = 0.700149
+Epoch 9/160: 100%|██████████| 82/82 [00:08<00:00,  9.47it/s]
+2025-07-02 22:12:44.549 | INFO     | model:train:251 - [epoch 9]: epoch loss = 4.040832,   acc = 0.714297
+[epoch 9]: epoch loss = 4.040832,   acc = 0.714297
+Epoch 10/160: 100%|██████████| 82/82 [00:08<00:00,  9.50it/s]
+2025-07-02 22:12:53.267 | INFO     | model:train:251 - [epoch 10]: epoch loss = 3.707328,   acc = 0.738405
+[epoch 10]: epoch loss = 3.707328,   acc = 0.738405
+Epoch 11/160: 100%|██████████| 82/82 [00:08<00:00,  9.63it/s]
+2025-07-02 22:13:02.258 | INFO     | model:train:251 - [epoch 11]: epoch loss = 3.499118,   acc = 0.759036
+[epoch 11]: epoch loss = 3.499118,   acc = 0.759036
+Epoch 12/160: 100%|██████████| 82/82 [00:08<00:00,  9.68it/s]
+2025-07-02 22:13:10.817 | INFO     | model:train:251 - [epoch 12]: epoch loss = 3.345192,   acc = 0.775472
+[epoch 12]: epoch loss = 3.345192,   acc = 0.775472
+Epoch 13/160: 100%|██████████| 82/82 [00:08<00:00,  9.63it/s]
+2025-07-02 22:13:19.440 | INFO     | model:train:251 - [epoch 13]: epoch loss = 3.343488,   acc = 0.772449
+[epoch 13]: epoch loss = 3.343488,   acc = 0.772449
+Epoch 14/160: 100%|██████████| 82/82 [00:08<00:00,  9.58it/s]
+2025-07-02 22:13:28.091 | INFO     | model:train:251 - [epoch 14]: epoch loss = 3.042248,   acc = 0.798350
+[epoch 14]: epoch loss = 3.042248,   acc = 0.798350
+Epoch 15/160: 100%|██████████| 82/82 [00:08<00:00,  9.52it/s]
+2025-07-02 22:13:36.786 | INFO     | model:train:251 - [epoch 15]: epoch loss = 2.857061,   acc = 0.813892
+[epoch 15]: epoch loss = 2.857061,   acc = 0.813892
+Epoch 16/160: 100%|██████████| 82/82 [00:08<00:00,  9.45it/s]
+2025-07-02 22:13:45.684 | INFO     | model:train:251 - [epoch 16]: epoch loss = 2.743329,   acc = 0.825855
+[epoch 16]: epoch loss = 2.743329,   acc = 0.825855
+Epoch 17/160: 100%|██████████| 82/82 [00:08<00:00,  9.54it/s]
+2025-07-02 22:13:54.372 | INFO     | model:train:251 - [epoch 17]: epoch loss = 2.588879,   acc = 0.840292
+[epoch 17]: epoch loss = 2.588879,   acc = 0.840292
+Epoch 18/160: 100%|██████████| 82/82 [00:08<00:00,  9.48it/s]
+2025-07-02 22:14:03.757 | INFO     | model:train:251 - [epoch 18]: epoch loss = 2.502056,   acc = 0.847936
+[epoch 18]: epoch loss = 2.502056,   acc = 0.847936
+Epoch 19/160: 100%|██████████| 82/82 [00:08<00:00,  9.50it/s]
+2025-07-02 22:14:12.477 | INFO     | model:train:251 - [epoch 19]: epoch loss = 2.445020,   acc = 0.850110
+[epoch 19]: epoch loss = 2.445020,   acc = 0.850110
+Epoch 20/160: 100%|██████████| 82/82 [00:08<00:00,  9.73it/s]
+2025-07-02 22:14:20.990 | INFO     | model:train:251 - [epoch 20]: epoch loss = 2.506777,   acc = 0.841304
+[epoch 20]: epoch loss = 2.506777,   acc = 0.841304
+/home/djh/my_envs/dai_env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:2776: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([9581, 2661, 3463, 5747, 9652, 8059, 6079, 7960, 2287,  844,  704,
+       2369]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([ 4818,  5132,  3966,  4739,  9304, 12051,  4974,  7260,  1535,
+        1653,  3974]))
+2025-07-02 22:14:21.328 | INFO     | model:train:267 - [epoch 20]: val loss = 6.415107,   val acc = 0.558984,   val balanced acc = 0.532219
+[epoch 20]: val loss = 6.415107,   val acc = 0.558984,   val balanced acc = 0.532219
+Epoch 21/160:  49%|████▉     | 40/82 [00:04<00:04,  8.71it/s]wandb: WARNING Tried to log to step 20 that is less than the current step 21. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Epoch 21/160: 100%|██████████| 82/82 [00:08<00:00,  9.77it/s]
+2025-07-02 22:14:29.845 | INFO     | model:train:251 - [epoch 21]: epoch loss = 2.357666,   acc = 0.857265
+[epoch 21]: epoch loss = 2.357666,   acc = 0.857265
+Epoch 22/160: 100%|██████████| 82/82 [00:08<00:00,  9.32it/s]
+2025-07-02 22:14:38.916 | INFO     | model:train:251 - [epoch 22]: epoch loss = 2.240294,   acc = 0.868302
+[epoch 22]: epoch loss = 2.240294,   acc = 0.868302
+Epoch 23/160: 100%|██████████| 82/82 [00:08<00:00,  9.74it/s]
+2025-07-02 22:14:47.416 | INFO     | model:train:251 - [epoch 23]: epoch loss = 2.012020,   acc = 0.887869
+[epoch 23]: epoch loss = 2.012020,   acc = 0.887869
+Epoch 24/160: 100%|██████████| 82/82 [00:11<00:00,  7.28it/s]
+2025-07-02 22:14:58.791 | INFO     | model:train:251 - [epoch 24]: epoch loss = 1.976456,   acc = 0.889524
+[epoch 24]: epoch loss = 1.976456,   acc = 0.889524
+Epoch 25/160: 100%|██████████| 82/82 [00:10<00:00,  7.72it/s]
+2025-07-02 22:15:09.530 | INFO     | model:train:251 - [epoch 25]: epoch loss = 1.914385,   acc = 0.894858
+[epoch 25]: epoch loss = 1.914385,   acc = 0.894858
+Epoch 26/160: 100%|██████████| 82/82 [00:11<00:00,  7.40it/s]
+2025-07-02 22:15:20.723 | INFO     | model:train:251 - [epoch 26]: epoch loss = 1.851366,   acc = 0.898132
+[epoch 26]: epoch loss = 1.851366,   acc = 0.898132
+Epoch 27/160: 100%|██████████| 82/82 [00:10<00:00,  7.71it/s]
+2025-07-02 22:15:31.455 | INFO     | model:train:251 - [epoch 27]: epoch loss = 1.795858,   acc = 0.902957
+[epoch 27]: epoch loss = 1.795858,   acc = 0.902957
+Epoch 28/160: 100%|██████████| 82/82 [00:11<00:00,  6.92it/s]
+2025-07-02 22:15:43.963 | INFO     | model:train:251 - [epoch 28]: epoch loss = 1.816486,   acc = 0.898963
+[epoch 28]: epoch loss = 1.816486,   acc = 0.898963
+Epoch 29/160: 100%|██████████| 82/82 [00:11<00:00,  7.17it/s]
+2025-07-02 22:15:55.488 | INFO     | model:train:251 - [epoch 29]: epoch loss = 1.737327,   acc = 0.905511
+[epoch 29]: epoch loss = 1.737327,   acc = 0.905511
+Epoch 30/160: 100%|██████████| 82/82 [00:14<00:00,  5.73it/s]
+2025-07-02 22:16:10.007 | INFO     | model:train:251 - [epoch 30]: epoch loss = 1.620130,   acc = 0.914716
+[epoch 30]: epoch loss = 1.620130,   acc = 0.914716
+Epoch 31/160: 100%|██████████| 82/82 [00:15<00:00,  5.21it/s]
+2025-07-02 22:16:25.887 | INFO     | model:train:251 - [epoch 31]: epoch loss = 1.563439,   acc = 0.919634
+[epoch 31]: epoch loss = 1.563439,   acc = 0.919634
+Epoch 32/160: 100%|██████████| 82/82 [00:15<00:00,  5.40it/s]
+2025-07-02 22:16:41.266 | INFO     | model:train:251 - [epoch 32]: epoch loss = 1.555289,   acc = 0.919173
+[epoch 32]: epoch loss = 1.555289,   acc = 0.919173
+Epoch 33/160: 100%|██████████| 82/82 [00:15<00:00,  5.18it/s]
+2025-07-02 22:16:57.238 | INFO     | model:train:251 - [epoch 33]: epoch loss = 1.860793,   acc = 0.888097
+[epoch 33]: epoch loss = 1.860793,   acc = 0.888097
+Epoch 34/160: 100%|██████████| 82/82 [00:16<00:00,  5.08it/s]
+2025-07-02 22:17:13.527 | INFO     | model:train:251 - [epoch 34]: epoch loss = 2.254862,   acc = 0.855369
+[epoch 34]: epoch loss = 2.254862,   acc = 0.855369
+Epoch 35/160: 100%|██████████| 82/82 [00:15<00:00,  5.14it/s]
+2025-07-02 22:17:29.685 | INFO     | model:train:251 - [epoch 35]: epoch loss = 1.704015,   acc = 0.906118
+[epoch 35]: epoch loss = 1.704015,   acc = 0.906118
+Epoch 36/160: 100%|██████████| 82/82 [00:17<00:00,  4.72it/s]
+2025-07-02 22:17:47.207 | INFO     | model:train:251 - [epoch 36]: epoch loss = 1.463960,   acc = 0.926452
+[epoch 36]: epoch loss = 1.463960,   acc = 0.926452
+Epoch 37/160: 100%|██████████| 82/82 [00:18<00:00,  4.42it/s]
+2025-07-02 22:18:05.899 | INFO     | model:train:251 - [epoch 37]: epoch loss = 1.370486,   acc = 0.933405
+[epoch 37]: epoch loss = 1.370486,   acc = 0.933405
+Epoch 38/160: 100%|██████████| 82/82 [00:17<00:00,  4.58it/s]
+2025-07-02 22:18:23.950 | INFO     | model:train:251 - [epoch 38]: epoch loss = 1.311200,   acc = 0.937620
+[epoch 38]: epoch loss = 1.311200,   acc = 0.937620
+Epoch 39/160: 100%|██████████| 82/82 [00:18<00:00,  4.53it/s]
+2025-07-02 22:18:42.174 | INFO     | model:train:251 - [epoch 39]: epoch loss = 1.278471,   acc = 0.939884
+[epoch 39]: epoch loss = 1.278471,   acc = 0.939884
+Epoch 40/160: 100%|██████████| 82/82 [00:17<00:00,  4.76it/s]
+2025-07-02 22:18:59.487 | INFO     | model:train:251 - [epoch 40]: epoch loss = 1.249386,   acc = 0.941454
+[epoch 40]: epoch loss = 1.249386,   acc = 0.941454
+/home/djh/my_envs/dai_env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:2776: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([9743, 3506, 3427, 5174, 9641, 8308, 6068, 6998,  315, 1086, 1507,
+       3633]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([ 4818,  5132,  3966,  4739,  9304, 12051,  4974,  7260,  1535,
+        1653,  3974]))
+2025-07-02 22:19:00.398 | INFO     | model:train:267 - [epoch 40]: val loss = 6.608953,   val acc = 0.605309,   val balanced acc = 0.598231
+[epoch 40]: val loss = 6.608953,   val acc = 0.605309,   val balanced acc = 0.598231
+Epoch 41/160:  27%|██▋       | 22/82 [00:04<00:14,  4.08it/s]wandb: WARNING Tried to log to step 40 that is less than the current step 41. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Epoch 41/160: 100%|██████████| 82/82 [00:17<00:00,  4.61it/s]
+2025-07-02 22:19:18.455 | INFO     | model:train:251 - [epoch 41]: epoch loss = 1.225352,   acc = 0.942565
+[epoch 41]: epoch loss = 1.225352,   acc = 0.942565
+Epoch 42/160: 100%|██████████| 82/82 [00:17<00:00,  4.62it/s]
+2025-07-02 22:19:36.354 | INFO     | model:train:251 - [epoch 42]: epoch loss = 1.202504,   acc = 0.942924
+[epoch 42]: epoch loss = 1.202504,   acc = 0.942924
+Epoch 43/160: 100%|██████████| 82/82 [00:17<00:00,  4.58it/s]
+2025-07-02 22:19:54.736 | INFO     | model:train:251 - [epoch 43]: epoch loss = 1.173937,   acc = 0.945303
+[epoch 43]: epoch loss = 1.173937,   acc = 0.945303
+Epoch 44/160: 100%|██████████| 82/82 [00:16<00:00,  4.88it/s]
+2025-07-02 22:20:11.719 | INFO     | model:train:251 - [epoch 44]: epoch loss = 1.168434,   acc = 0.945652
+[epoch 44]: epoch loss = 1.168434,   acc = 0.945652
+Epoch 45/160: 100%|██████████| 82/82 [00:16<00:00,  4.85it/s]
+2025-07-02 22:20:28.744 | INFO     | model:train:251 - [epoch 45]: epoch loss = 1.341372,   acc = 0.930913
+[epoch 45]: epoch loss = 1.341372,   acc = 0.930913
+Epoch 46/160: 100%|██████████| 82/82 [00:17<00:00,  4.69it/s]
+2025-07-02 22:20:46.411 | INFO     | model:train:251 - [epoch 46]: epoch loss = 1.401942,   acc = 0.923509
+[epoch 46]: epoch loss = 1.401942,   acc = 0.923509
+Epoch 47/160: 100%|██████████| 82/82 [00:16<00:00,  4.87it/s]
+2025-07-02 22:21:03.389 | INFO     | model:train:251 - [epoch 47]: epoch loss = 1.321979,   acc = 0.930145
+[epoch 47]: epoch loss = 1.321979,   acc = 0.930145
+Epoch 48/160: 100%|██████████| 82/82 [00:16<00:00,  4.89it/s]
+2025-07-02 22:21:20.306 | INFO     | model:train:251 - [epoch 48]: epoch loss = 1.126593,   acc = 0.947078
+[epoch 48]: epoch loss = 1.126593,   acc = 0.947078
+Epoch 49/160: 100%|██████████| 82/82 [00:17<00:00,  4.71it/s]
+2025-07-02 22:21:37.832 | INFO     | model:train:251 - [epoch 49]: epoch loss = 1.066663,   acc = 0.951649
+[epoch 49]: epoch loss = 1.066663,   acc = 0.951649
+Epoch 50/160: 100%|██████████| 82/82 [00:17<00:00,  4.81it/s]
+2025-07-02 22:21:55.016 | INFO     | model:train:251 - [epoch 50]: epoch loss = 1.039713,   acc = 0.953359
+[epoch 50]: epoch loss = 1.039713,   acc = 0.953359
+Epoch 51/160: 100%|██████████| 82/82 [00:16<00:00,  4.84it/s]
+2025-07-02 22:22:12.077 | INFO     | model:train:251 - [epoch 51]: epoch loss = 0.996310,   acc = 0.956756
+[epoch 51]: epoch loss = 0.996310,   acc = 0.956756
+Epoch 52/160: 100%|██████████| 82/82 [00:16<00:00,  4.90it/s]
+2025-07-02 22:22:28.949 | INFO     | model:train:251 - [epoch 52]: epoch loss = 0.981354,   acc = 0.957351
+[epoch 52]: epoch loss = 0.981354,   acc = 0.957351
+Epoch 53/160: 100%|██████████| 82/82 [00:17<00:00,  4.57it/s]
+2025-07-02 22:22:47.030 | INFO     | model:train:251 - [epoch 53]: epoch loss = 0.991665,   acc = 0.955211
+[epoch 53]: epoch loss = 0.991665,   acc = 0.955211
+Epoch 54/160: 100%|██████████| 82/82 [00:17<00:00,  4.70it/s]
+2025-07-02 22:23:04.687 | INFO     | model:train:251 - [epoch 54]: epoch loss = 1.031614,   acc = 0.951962
+[epoch 54]: epoch loss = 1.031614,   acc = 0.951962
+Epoch 55/160: 100%|██████████| 82/82 [00:17<00:00,  4.76it/s]
+2025-07-02 22:23:22.112 | INFO     | model:train:251 - [epoch 55]: epoch loss = 0.992585,   acc = 0.954057
+[epoch 55]: epoch loss = 0.992585,   acc = 0.954057
+Epoch 56/160: 100%|██████████| 82/82 [00:17<00:00,  4.67it/s]
+2025-07-02 22:23:40.311 | INFO     | model:train:251 - [epoch 56]: epoch loss = 0.932562,   acc = 0.959233
+[epoch 56]: epoch loss = 0.932562,   acc = 0.959233
+Epoch 57/160: 100%|██████████| 82/82 [00:16<00:00,  4.94it/s]
+2025-07-02 22:23:57.045 | INFO     | model:train:251 - [epoch 57]: epoch loss = 0.916354,   acc = 0.959412
+[epoch 57]: epoch loss = 0.916354,   acc = 0.959412
+Epoch 58/160: 100%|██████████| 82/82 [00:18<00:00,  4.33it/s]
+2025-07-02 22:24:16.143 | INFO     | model:train:251 - [epoch 58]: epoch loss = 0.903914,   acc = 0.960271
+[epoch 58]: epoch loss = 0.903914,   acc = 0.960271
+Epoch 59/160: 100%|██████████| 82/82 [00:17<00:00,  4.79it/s]
+2025-07-02 22:24:33.410 | INFO     | model:train:251 - [epoch 59]: epoch loss = 0.875073,   acc = 0.962686
+[epoch 59]: epoch loss = 0.875073,   acc = 0.962686
+Epoch 60/160: 100%|██████████| 82/82 [00:17<00:00,  4.79it/s]
+2025-07-02 22:24:50.638 | INFO     | model:train:251 - [epoch 60]: epoch loss = 0.880353,   acc = 0.960990
+[epoch 60]: epoch loss = 0.880353,   acc = 0.960990
+/home/djh/my_envs/dai_env/lib/python3.10/site-packages/sklearn/metrics/_classification.py:2776: UserWarning: y_pred contains classes not in y_true
+  warnings.warn("y_pred contains classes not in y_true")
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([10939,  3854,  3523,  5252,  8612,  8884,  5428,  6355,   287,
+        1099,  1416,  3757]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([ 4818,  5132,  3966,  4739,  9304, 12051,  4974,  7260,  1535,
+        1653,  3974]))
+2025-07-02 22:24:51.613 | INFO     | model:train:267 - [epoch 60]: val loss = 7.488938,   val acc = 0.590513,   val balanced acc = 0.581150
+[epoch 60]: val loss = 7.488938,   val acc = 0.590513,   val balanced acc = 0.581150
+2025-07-02 22:24:51.704 | INFO     | model:train:287 - EarlyStopping counter: 1 out of 3
+EarlyStopping counter: 1 out of 3
+Epoch 61/160:  21%|██        | 17/82 [00:03<00:14,  4.42it/s]wandb: WARNING Tried to log to step 60 that is less than the current step 61. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Epoch 61/160: 100%|██████████| 82/82 [00:17<00:00,  4.75it/s]
+2025-07-02 22:25:09.102 | INFO     | model:train:251 - [epoch 61]: epoch loss = 0.873382,   acc = 0.961195
+[epoch 61]: epoch loss = 0.873382,   acc = 0.961195
+Epoch 62/160: 100%|██████████| 82/82 [00:16<00:00,  4.89it/s]
+2025-07-02 22:25:25.970 | INFO     | model:train:251 - [epoch 62]: epoch loss = 0.842395,   acc = 0.963522
+[epoch 62]: epoch loss = 0.842395,   acc = 0.963522
+Epoch 63/160: 100%|██████████| 82/82 [00:17<00:00,  4.75it/s]
+2025-07-02 22:25:43.379 | INFO     | model:train:251 - [epoch 63]: epoch loss = 0.830261,   acc = 0.964649
+[epoch 63]: epoch loss = 0.830261,   acc = 0.964649
+Epoch 64/160: 100%|██████████| 82/82 [00:17<00:00,  4.60it/s]
+2025-07-02 22:26:01.375 | INFO     | model:train:251 - [epoch 64]: epoch loss = 0.832010,   acc = 0.963891
+[epoch 64]: epoch loss = 0.832010,   acc = 0.963891
+Epoch 65/160: 100%|██████████| 82/82 [00:18<00:00,  4.52it/s]
+2025-07-02 22:26:19.670 | INFO     | model:train:251 - [epoch 65]: epoch loss = 0.865128,   acc = 0.960945
+[epoch 65]: epoch loss = 0.865128,   acc = 0.960945
+Epoch 66/160: 100%|██████████| 82/82 [00:17<00:00,  4.74it/s]
+2025-07-02 22:26:37.083 | INFO     | model:train:251 - [epoch 66]: epoch loss = 0.832188,   acc = 0.962803
+[epoch 66]: epoch loss = 0.832188,   acc = 0.962803
+Epoch 67/160: 100%|██████████| 82/82 [00:17<00:00,  4.72it/s]
+2025-07-02 22:26:54.651 | INFO     | model:train:251 - [epoch 67]: epoch loss = 0.792690,   acc = 0.965754
+[epoch 67]: epoch loss = 0.792690,   acc = 0.965754
+Epoch 68/160: 100%|██████████| 82/82 [00:17<00:00,  4.71it/s]
+2025-07-02 22:27:12.207 | INFO     | model:train:251 - [epoch 68]: epoch loss = 0.789793,   acc = 0.965441
+[epoch 68]: epoch loss = 0.789793,   acc = 0.965441
+Epoch 69/160: 100%|██████████| 82/82 [00:16<00:00,  4.83it/s]
+2025-07-02 22:27:29.314 | INFO     | model:train:251 - [epoch 69]: epoch loss = 0.771542,   acc = 0.966784
+[epoch 69]: epoch loss = 0.771542,   acc = 0.966784
+Epoch 70/160: 100%|██████████| 82/82 [00:17<00:00,  4.78it/s]
+2025-07-02 22:27:46.593 | INFO     | model:train:251 - [epoch 70]: epoch loss = 0.747666,   acc = 0.968583
+[epoch 70]: epoch loss = 0.747666,   acc = 0.968583
+Epoch 71/160: 100%|██████████| 82/82 [00:17<00:00,  4.74it/s]
+2025-07-02 22:28:04.028 | INFO     | model:train:251 - [epoch 71]: epoch loss = 0.726143,   acc = 0.970228
+[epoch 71]: epoch loss = 0.726143,   acc = 0.970228
+Epoch 72/160: 100%|██████████| 82/82 [00:17<00:00,  4.79it/s]
+2025-07-02 22:28:21.330 | INFO     | model:train:251 - [epoch 72]: epoch loss = 0.757509,   acc = 0.967401
+[epoch 72]: epoch loss = 0.757509,   acc = 0.967401
+Epoch 73/160: 100%|██████████| 82/82 [00:17<00:00,  4.60it/s]
+2025-07-02 22:28:39.368 | INFO     | model:train:251 - [epoch 73]: epoch loss = 0.717218,   acc = 0.970815
+[epoch 73]: epoch loss = 0.717218,   acc = 0.970815
+Epoch 74/160: 100%|██████████| 82/82 [00:10<00:00,  8.03it/s]
+2025-07-02 22:28:49.764 | INFO     | model:train:251 - [epoch 74]: epoch loss = 0.728935,   acc = 0.968298
+[epoch 74]: epoch loss = 0.728935,   acc = 0.968298
+Epoch 75/160: 100%|██████████| 82/82 [00:08<00:00,  9.12it/s]
+2025-07-02 22:28:58.831 | INFO     | model:train:251 - [epoch 75]: epoch loss = 0.729757,   acc = 0.967810
+[epoch 75]: epoch loss = 0.729757,   acc = 0.967810
+Epoch 76/160: 100%|██████████| 82/82 [00:09<00:00,  8.78it/s]
+2025-07-02 22:29:08.258 | INFO     | model:train:251 - [epoch 76]: epoch loss = 0.723557,   acc = 0.968224
+[epoch 76]: epoch loss = 0.723557,   acc = 0.968224
+Epoch 77/160: 100%|██████████| 82/82 [00:09<00:00,  9.07it/s]
+2025-07-02 22:29:17.390 | INFO     | model:train:251 - [epoch 77]: epoch loss = 0.701449,   acc = 0.970229
+[epoch 77]: epoch loss = 0.701449,   acc = 0.970229
+Epoch 78/160: 100%|██████████| 82/82 [00:08<00:00,  9.70it/s]
+2025-07-02 22:29:25.919 | INFO     | model:train:251 - [epoch 78]: epoch loss = 0.687750,   acc = 0.970913
+[epoch 78]: epoch loss = 0.687750,   acc = 0.970913
+Epoch 79/160: 100%|██████████| 82/82 [00:08<00:00,  9.68it/s]
+2025-07-02 22:29:34.478 | INFO     | model:train:251 - [epoch 79]: epoch loss = 0.679802,   acc = 0.970997
+[epoch 79]: epoch loss = 0.679802,   acc = 0.970997
+Epoch 80/160: 100%|██████████| 82/82 [00:08<00:00,  9.69it/s]
+2025-07-02 22:29:43.016 | INFO     | model:train:251 - [epoch 80]: epoch loss = 0.703164,   acc = 0.968704
+[epoch 80]: epoch loss = 0.703164,   acc = 0.968704
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([13892,  3622,  2974,  4376,  8086,  9990,  4139,  6968,   777,
+        1250,  3332]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([ 4818,  5132,  3966,  4739,  9304, 12051,  4974,  7260,  1535,
+        1653,  3974]))
+2025-07-02 22:29:43.320 | INFO     | model:train:267 - [epoch 80]: val loss = 8.209670,   val acc = 0.575464,   val balanced acc = 0.549942
+[epoch 80]: val loss = 8.209670,   val acc = 0.575464,   val balanced acc = 0.549942
+2025-07-02 22:29:43.354 | INFO     | model:train:287 - EarlyStopping counter: 2 out of 3
+EarlyStopping counter: 2 out of 3
+Epoch 81/160:  27%|██▋       | 22/82 [00:02<00:05, 10.29it/s]wandb: WARNING Tried to log to step 80 that is less than the current step 81. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Epoch 81/160: 100%|██████████| 82/82 [00:08<00:00,  9.78it/s]
+2025-07-02 22:29:51.818 | INFO     | model:train:251 - [epoch 81]: epoch loss = 0.668411,   acc = 0.971972
+[epoch 81]: epoch loss = 0.668411,   acc = 0.971972
+Epoch 82/160: 100%|██████████| 82/82 [00:08<00:00,  9.76it/s]
+2025-07-02 22:30:00.294 | INFO     | model:train:251 - [epoch 82]: epoch loss = 0.646407,   acc = 0.973282
+[epoch 82]: epoch loss = 0.646407,   acc = 0.973282
+Epoch 83/160: 100%|██████████| 82/82 [00:08<00:00,  9.64it/s]
+2025-07-02 22:30:09.987 | INFO     | model:train:251 - [epoch 83]: epoch loss = 0.631081,   acc = 0.974802
+[epoch 83]: epoch loss = 0.631081,   acc = 0.974802
+Epoch 84/160: 100%|██████████| 82/82 [00:08<00:00,  9.37it/s]
+2025-07-02 22:30:18.795 | INFO     | model:train:251 - [epoch 84]: epoch loss = 0.633569,   acc = 0.973946
+[epoch 84]: epoch loss = 0.633569,   acc = 0.973946
+Epoch 85/160: 100%|██████████| 82/82 [00:08<00:00,  9.63it/s]
+2025-07-02 22:30:27.388 | INFO     | model:train:251 - [epoch 85]: epoch loss = 0.627826,   acc = 0.974504
+[epoch 85]: epoch loss = 0.627826,   acc = 0.974504
+Epoch 86/160: 100%|██████████| 82/82 [00:08<00:00,  9.74it/s]
+2025-07-02 22:30:35.881 | INFO     | model:train:251 - [epoch 86]: epoch loss = 0.616477,   acc = 0.975226
+[epoch 86]: epoch loss = 0.616477,   acc = 0.975226
+Epoch 87/160: 100%|██████████| 82/82 [00:08<00:00,  9.51it/s]
+2025-07-02 22:30:44.584 | INFO     | model:train:251 - [epoch 87]: epoch loss = 0.601495,   acc = 0.976465
+[epoch 87]: epoch loss = 0.601495,   acc = 0.976465
+Epoch 88/160: 100%|██████████| 82/82 [00:08<00:00,  9.85it/s]
+2025-07-02 22:30:52.980 | INFO     | model:train:251 - [epoch 88]: epoch loss = 0.599304,   acc = 0.976043
+[epoch 88]: epoch loss = 0.599304,   acc = 0.976043
+Epoch 89/160: 100%|██████████| 82/82 [00:08<00:00,  9.75it/s]
+2025-07-02 22:31:01.460 | INFO     | model:train:251 - [epoch 89]: epoch loss = 0.593879,   acc = 0.976081
+[epoch 89]: epoch loss = 0.593879,   acc = 0.976081
+Epoch 90/160: 100%|██████████| 82/82 [00:08<00:00,  9.74it/s]
+2025-07-02 22:31:09.953 | INFO     | model:train:251 - [epoch 90]: epoch loss = 0.585914,   acc = 0.976791
+[epoch 90]: epoch loss = 0.585914,   acc = 0.976791
+Epoch 91/160: 100%|██████████| 82/82 [00:08<00:00,  9.57it/s]
+2025-07-02 22:31:18.593 | INFO     | model:train:251 - [epoch 91]: epoch loss = 0.590728,   acc = 0.976329
+[epoch 91]: epoch loss = 0.590728,   acc = 0.976329
+Epoch 92/160: 100%|██████████| 82/82 [00:08<00:00,  9.56it/s]
+2025-07-02 22:31:27.249 | INFO     | model:train:251 - [epoch 92]: epoch loss = 0.602382,   acc = 0.974557
+[epoch 92]: epoch loss = 0.602382,   acc = 0.974557
+Epoch 93/160: 100%|██████████| 82/82 [00:08<00:00,  9.52it/s]
+2025-07-02 22:31:36.534 | INFO     | model:train:251 - [epoch 93]: epoch loss = 0.598606,   acc = 0.974825
+[epoch 93]: epoch loss = 0.598606,   acc = 0.974825
+Epoch 94/160: 100%|██████████| 82/82 [00:08<00:00,  9.49it/s]
+2025-07-02 22:31:45.262 | INFO     | model:train:251 - [epoch 94]: epoch loss = 0.571517,   acc = 0.977003
+[epoch 94]: epoch loss = 0.571517,   acc = 0.977003
+Epoch 95/160: 100%|██████████| 82/82 [00:08<00:00,  9.77it/s]
+2025-07-02 22:31:53.743 | INFO     | model:train:251 - [epoch 95]: epoch loss = 0.560027,   acc = 0.977927
+[epoch 95]: epoch loss = 0.560027,   acc = 0.977927
+Epoch 96/160: 100%|██████████| 82/82 [00:08<00:00,  9.61it/s]
+2025-07-02 22:32:02.366 | INFO     | model:train:251 - [epoch 96]: epoch loss = 0.555619,   acc = 0.978281
+[epoch 96]: epoch loss = 0.555619,   acc = 0.978281
+Epoch 97/160: 100%|██████████| 82/82 [00:08<00:00,  9.71it/s]
+2025-07-02 22:32:10.898 | INFO     | model:train:251 - [epoch 97]: epoch loss = 0.543964,   acc = 0.978965
+[epoch 97]: epoch loss = 0.543964,   acc = 0.978965
+Epoch 98/160: 100%|██████████| 82/82 [00:08<00:00,  9.46it/s]
+2025-07-02 22:32:19.708 | INFO     | model:train:251 - [epoch 98]: epoch loss = 0.547782,   acc = 0.978304
+[epoch 98]: epoch loss = 0.547782,   acc = 0.978304
+Epoch 99/160: 100%|██████████| 82/82 [00:08<00:00,  9.68it/s]
+2025-07-02 22:32:28.270 | INFO     | model:train:251 - [epoch 99]: epoch loss = 0.541358,   acc = 0.978743
+[epoch 99]: epoch loss = 0.541358,   acc = 0.978743
+Epoch 100/160: 100%|██████████| 82/82 [00:08<00:00,  9.47it/s]
+2025-07-02 22:32:37.339 | INFO     | model:train:251 - [epoch 100]: epoch loss = 0.538083,   acc = 0.978741
+[epoch 100]: epoch loss = 0.538083,   acc = 0.978741
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([10331,  3578,  3592,  4897,  8393,  8415,  6652,  7694,   954,
+        1153,  3747]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([ 4818,  5132,  3966,  4739,  9304, 12051,  4974,  7260,  1535,
+        1653,  3974]))
+2025-07-02 22:32:37.684 | INFO     | model:train:267 - [epoch 100]: val loss = 8.302282,   val acc = 0.590311,   val balanced acc = 0.570085
+[epoch 100]: val loss = 8.302282,   val acc = 0.590311,   val balanced acc = 0.570085
+2025-07-02 22:32:37.721 | INFO     | model:train:287 - EarlyStopping counter: 3 out of 3
+EarlyStopping counter: 3 out of 3
+2025-07-02 22:32:37.721 | INFO     | model:train:289 - Early stopping triggered.
+Early stopping triggered.

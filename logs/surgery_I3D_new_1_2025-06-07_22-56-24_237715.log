@@ -1,0 +1,88 @@
+2025-06-07 22:56:30.670 | INFO     | model:train:237 - [epoch 1]: epoch loss = 9.449627,   acc = 0.165441
+2025-06-07 22:56:35.973 | INFO     | model:train:237 - [epoch 2]: epoch loss = 9.055358,   acc = 0.193408
+2025-06-07 22:56:41.334 | INFO     | model:train:237 - [epoch 3]: epoch loss = 8.496790,   acc = 0.202433
+2025-06-07 22:56:46.603 | INFO     | model:train:237 - [epoch 4]: epoch loss = 7.798789,   acc = 0.230796
+2025-06-07 22:56:52.212 | INFO     | model:train:237 - [epoch 5]: epoch loss = 6.969984,   acc = 0.360397
+2025-06-07 22:56:57.572 | INFO     | model:train:237 - [epoch 6]: epoch loss = 6.328714,   acc = 0.452069
+2025-06-07 22:57:02.963 | INFO     | model:train:237 - [epoch 7]: epoch loss = 5.910414,   acc = 0.522041
+2025-06-07 22:57:08.401 | INFO     | model:train:237 - [epoch 8]: epoch loss = 5.424046,   acc = 0.566389
+2025-06-07 22:57:13.610 | INFO     | model:train:237 - [epoch 9]: epoch loss = 5.017351,   acc = 0.615519
+2025-06-07 22:57:18.848 | INFO     | model:train:237 - [epoch 10]: epoch loss = 4.763744,   acc = 0.631234
+2025-06-07 22:57:24.151 | INFO     | model:train:237 - [epoch 11]: epoch loss = 4.472153,   acc = 0.661262
+2025-06-07 22:57:29.379 | INFO     | model:train:237 - [epoch 12]: epoch loss = 4.297113,   acc = 0.687749
+2025-06-07 22:57:34.466 | INFO     | model:train:237 - [epoch 13]: epoch loss = 4.186747,   acc = 0.680657
+2025-06-07 22:57:39.653 | INFO     | model:train:237 - [epoch 14]: epoch loss = 4.076996,   acc = 0.696481
+2025-06-07 22:57:44.908 | INFO     | model:train:237 - [epoch 15]: epoch loss = 4.129656,   acc = 0.693010
+2025-06-07 22:57:50.175 | INFO     | model:train:237 - [epoch 16]: epoch loss = 3.958876,   acc = 0.707936
+2025-06-07 22:57:55.448 | INFO     | model:train:237 - [epoch 17]: epoch loss = 3.659551,   acc = 0.741426
+2025-06-07 22:58:00.696 | INFO     | model:train:237 - [epoch 18]: epoch loss = 3.469059,   acc = 0.754153
+2025-06-07 22:58:05.981 | INFO     | model:train:237 - [epoch 19]: epoch loss = 3.505204,   acc = 0.746256
+2025-06-07 22:58:11.247 | INFO     | model:train:237 - [epoch 20]: epoch loss = 3.299132,   acc = 0.769759
+2025-06-07 22:58:11.565 | INFO     | model:train:245 - [epoch 20]: val loss = 5.166797,   val acc = 0.583426,   val balanced acc = 0.515697
+2025-06-07 22:58:16.818 | INFO     | model:train:237 - [epoch 21]: epoch loss = 3.182714,   acc = 0.781930
+2025-06-07 22:58:21.956 | INFO     | model:train:237 - [epoch 22]: epoch loss = 2.950743,   acc = 0.803486
+2025-06-07 22:58:27.018 | INFO     | model:train:237 - [epoch 23]: epoch loss = 2.811431,   acc = 0.813079
+2025-06-07 22:58:32.089 | INFO     | model:train:237 - [epoch 24]: epoch loss = 2.986756,   acc = 0.797314
+2025-06-07 22:58:37.203 | INFO     | model:train:237 - [epoch 25]: epoch loss = 2.798435,   acc = 0.819328
+2025-06-07 22:58:42.343 | INFO     | model:train:237 - [epoch 26]: epoch loss = 2.700412,   acc = 0.824567
+2025-06-07 22:58:47.453 | INFO     | model:train:237 - [epoch 27]: epoch loss = 2.774413,   acc = 0.814360
+2025-06-07 22:58:52.629 | INFO     | model:train:237 - [epoch 28]: epoch loss = 2.467513,   acc = 0.848599
+2025-06-07 22:58:57.757 | INFO     | model:train:237 - [epoch 29]: epoch loss = 2.308345,   acc = 0.860348
+2025-06-07 22:59:02.946 | INFO     | model:train:237 - [epoch 30]: epoch loss = 2.173185,   acc = 0.873600
+2025-06-07 22:59:08.312 | INFO     | model:train:237 - [epoch 31]: epoch loss = 2.377957,   acc = 0.851875
+2025-06-07 22:59:13.598 | INFO     | model:train:237 - [epoch 32]: epoch loss = 2.488965,   acc = 0.837924
+2025-06-07 22:59:18.779 | INFO     | model:train:237 - [epoch 33]: epoch loss = 2.296813,   acc = 0.860862
+2025-06-07 22:59:23.925 | INFO     | model:train:237 - [epoch 34]: epoch loss = 2.130398,   acc = 0.873924
+2025-06-07 22:59:29.252 | INFO     | model:train:237 - [epoch 35]: epoch loss = 2.244045,   acc = 0.861025
+2025-06-07 22:59:34.462 | INFO     | model:train:237 - [epoch 36]: epoch loss = 2.137460,   acc = 0.871456
+2025-06-07 22:59:39.705 | INFO     | model:train:237 - [epoch 37]: epoch loss = 1.916108,   acc = 0.890254
+2025-06-07 22:59:44.882 | INFO     | model:train:237 - [epoch 38]: epoch loss = 1.769019,   acc = 0.906167
+2025-06-07 22:59:50.095 | INFO     | model:train:237 - [epoch 39]: epoch loss = 1.726520,   acc = 0.907482
+2025-06-07 22:59:55.308 | INFO     | model:train:237 - [epoch 40]: epoch loss = 1.634603,   acc = 0.914602
+2025-06-07 22:59:55.558 | INFO     | model:train:245 - [epoch 40]: val loss = 6.127782,   val acc = 0.602397,   val balanced acc = 0.476533
+2025-06-07 22:59:55.590 | INFO     | model:train:258 - EarlyStopping counter: 1 out of 3
+2025-06-07 23:00:00.801 | INFO     | model:train:237 - [epoch 41]: epoch loss = 1.630648,   acc = 0.913747
+2025-06-07 23:00:05.942 | INFO     | model:train:237 - [epoch 42]: epoch loss = 1.583324,   acc = 0.917942
+2025-06-07 23:00:11.128 | INFO     | model:train:237 - [epoch 43]: epoch loss = 1.579578,   acc = 0.917019
+2025-06-07 23:00:16.427 | INFO     | model:train:237 - [epoch 44]: epoch loss = 2.102859,   acc = 0.876120
+2025-06-07 23:00:21.608 | INFO     | model:train:237 - [epoch 45]: epoch loss = 3.213171,   acc = 0.765719
+2025-06-07 23:00:26.812 | INFO     | model:train:237 - [epoch 46]: epoch loss = 2.802543,   acc = 0.806902
+2025-06-07 23:00:32.173 | INFO     | model:train:237 - [epoch 47]: epoch loss = 2.069153,   acc = 0.875484
+2025-06-07 23:00:37.544 | INFO     | model:train:237 - [epoch 48]: epoch loss = 1.710503,   acc = 0.907101
+2025-06-07 23:00:42.819 | INFO     | model:train:237 - [epoch 49]: epoch loss = 1.552674,   acc = 0.920624
+2025-06-07 23:00:48.113 | INFO     | model:train:237 - [epoch 50]: epoch loss = 1.474560,   acc = 0.927727
+2025-06-07 23:00:53.363 | INFO     | model:train:237 - [epoch 51]: epoch loss = 1.430697,   acc = 0.930907
+2025-06-07 23:00:58.685 | INFO     | model:train:237 - [epoch 52]: epoch loss = 1.371928,   acc = 0.935446
+2025-06-07 23:01:03.946 | INFO     | model:train:237 - [epoch 53]: epoch loss = 1.355691,   acc = 0.932799
+2025-06-07 23:01:09.183 | INFO     | model:train:237 - [epoch 54]: epoch loss = 1.594448,   acc = 0.911404
+2025-06-07 23:01:14.515 | INFO     | model:train:237 - [epoch 55]: epoch loss = 1.494155,   acc = 0.923390
+2025-06-07 23:01:19.774 | INFO     | model:train:237 - [epoch 56]: epoch loss = 1.365579,   acc = 0.932724
+2025-06-07 23:01:25.149 | INFO     | model:train:237 - [epoch 57]: epoch loss = 1.265971,   acc = 0.941207
+2025-06-07 23:01:30.680 | INFO     | model:train:237 - [epoch 58]: epoch loss = 1.220266,   acc = 0.944748
+2025-06-07 23:01:35.892 | INFO     | model:train:237 - [epoch 59]: epoch loss = 1.180664,   acc = 0.946423
+2025-06-07 23:01:41.171 | INFO     | model:train:237 - [epoch 60]: epoch loss = 1.174899,   acc = 0.946855
+2025-06-07 23:01:41.440 | INFO     | model:train:245 - [epoch 60]: val loss = 6.478490,   val acc = 0.598667,   val balanced acc = 0.489706
+2025-06-07 23:01:41.475 | INFO     | model:train:258 - EarlyStopping counter: 2 out of 3
+2025-06-07 23:01:46.760 | INFO     | model:train:237 - [epoch 61]: epoch loss = 1.155026,   acc = 0.946331
+2025-06-07 23:01:52.101 | INFO     | model:train:237 - [epoch 62]: epoch loss = 1.125566,   acc = 0.950913
+2025-06-07 23:01:57.372 | INFO     | model:train:237 - [epoch 63]: epoch loss = 1.093896,   acc = 0.953324
+2025-06-07 23:02:02.606 | INFO     | model:train:237 - [epoch 64]: epoch loss = 1.065129,   acc = 0.955222
+2025-06-07 23:02:07.869 | INFO     | model:train:237 - [epoch 65]: epoch loss = 1.051468,   acc = 0.955619
+2025-06-07 23:02:13.125 | INFO     | model:train:237 - [epoch 66]: epoch loss = 1.031116,   acc = 0.956058
+2025-06-07 23:02:18.315 | INFO     | model:train:237 - [epoch 67]: epoch loss = 1.021146,   acc = 0.957323
+2025-06-07 23:02:23.620 | INFO     | model:train:237 - [epoch 68]: epoch loss = 1.003379,   acc = 0.958573
+2025-06-07 23:02:28.674 | INFO     | model:train:237 - [epoch 69]: epoch loss = 0.987073,   acc = 0.959083
+2025-06-07 23:02:33.880 | INFO     | model:train:237 - [epoch 70]: epoch loss = 0.977364,   acc = 0.958402
+2025-06-07 23:02:39.018 | INFO     | model:train:237 - [epoch 71]: epoch loss = 0.986418,   acc = 0.957626
+2025-06-07 23:02:44.205 | INFO     | model:train:237 - [epoch 72]: epoch loss = 0.984255,   acc = 0.957394
+2025-06-07 23:02:49.316 | INFO     | model:train:237 - [epoch 73]: epoch loss = 1.018755,   acc = 0.954094
+2025-06-07 23:02:54.522 | INFO     | model:train:237 - [epoch 74]: epoch loss = 0.981807,   acc = 0.956946
+2025-06-07 23:02:59.755 | INFO     | model:train:237 - [epoch 75]: epoch loss = 0.994597,   acc = 0.954681
+2025-06-07 23:03:04.989 | INFO     | model:train:237 - [epoch 76]: epoch loss = 0.956252,   acc = 0.958763
+2025-06-07 23:03:10.167 | INFO     | model:train:237 - [epoch 77]: epoch loss = 0.930084,   acc = 0.960040
+2025-06-07 23:03:15.390 | INFO     | model:train:237 - [epoch 78]: epoch loss = 0.890208,   acc = 0.964286
+2025-06-07 23:03:20.705 | INFO     | model:train:237 - [epoch 79]: epoch loss = 0.866579,   acc = 0.966217
+2025-06-07 23:03:25.926 | INFO     | model:train:237 - [epoch 80]: epoch loss = 0.854766,   acc = 0.966433
+2025-06-07 23:03:26.190 | INFO     | model:train:245 - [epoch 80]: val loss = 7.160535,   val acc = 0.605435,   val balanced acc = 0.486474
+2025-06-07 23:03:26.225 | INFO     | model:train:258 - EarlyStopping counter: 3 out of 3
+2025-06-07 23:03:26.225 | INFO     | model:train:260 - Early stopping triggered.

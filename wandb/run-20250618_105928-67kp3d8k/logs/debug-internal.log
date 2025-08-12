@@ -1,0 +1,21 @@
+{"time":"2025-06-18T10:59:29.033567468+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/hdd2/Projects_dai/Projects_dai/MS-TCN2_dai/wandb/run-20250618_105928-67kp3d8k/logs/debug-core.log"}
+{"time":"2025-06-18T10:59:29.361775346+08:00","level":"INFO","msg":"stream: created new stream","id":"67kp3d8k"}
+{"time":"2025-06-18T10:59:29.361814104+08:00","level":"INFO","msg":"stream: started","id":"67kp3d8k"}
+{"time":"2025-06-18T10:59:29.36185102+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"67kp3d8k"}
+{"time":"2025-06-18T10:59:29.361861325+08:00","level":"INFO","msg":"handler: started","stream_id":"67kp3d8k"}
+{"time":"2025-06-18T10:59:29.361903669+08:00","level":"INFO","msg":"sender: started","stream_id":"67kp3d8k"}
+{"time":"2025-06-18T10:59:29.701253735+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-18T11:02:51.192242429+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":20,"current":21}
+{"time":"2025-06-18T11:06:09.896955551+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":40,"current":41}
+{"time":"2025-06-18T11:09:29.650868956+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":60,"current":61}
+{"time":"2025-06-18T11:12:48.838899396+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":80,"current":81}
+{"time":"2025-06-18T11:16:09.083106033+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":100,"current":101}
+{"time":"2025-06-18T11:16:09.084512148+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-18T11:16:09.084538078+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-18T11:16:10.085880884+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading output.log","runtime_seconds":0.727047928,"progress":"27.0KB/27.0KB"},{"desc":"uploading config.yaml","runtime_seconds":0.533182827,"progress":"896B/896B"}],"total_operations":2}}
+{"time":"2025-06-18T11:16:10.488927356+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-18T11:16:10.743218348+08:00","level":"INFO","msg":"stream: closing","id":"67kp3d8k"}
+{"time":"2025-06-18T11:16:10.743240301+08:00","level":"INFO","msg":"handler: closed","stream_id":"67kp3d8k"}
+{"time":"2025-06-18T11:16:10.743251629+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"67kp3d8k"}
+{"time":"2025-06-18T11:16:10.743264358+08:00","level":"INFO","msg":"sender: closed","stream_id":"67kp3d8k"}
+{"time":"2025-06-18T11:16:10.743327535+08:00","level":"INFO","msg":"stream: closed","id":"67kp3d8k"}

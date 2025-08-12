@@ -1,0 +1,20 @@
+{"time":"2025-06-18T11:37:20.703744695+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/hdd2/Projects_dai/Projects_dai/MS-TCN2_dai/wandb/run-20250618_113720-t3eoicpz/logs/debug-core.log"}
+{"time":"2025-06-18T11:37:21.027094994+08:00","level":"INFO","msg":"stream: created new stream","id":"t3eoicpz"}
+{"time":"2025-06-18T11:37:21.02713227+08:00","level":"INFO","msg":"stream: started","id":"t3eoicpz"}
+{"time":"2025-06-18T11:37:21.02717201+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"t3eoicpz"}
+{"time":"2025-06-18T11:37:21.02721194+08:00","level":"INFO","msg":"handler: started","stream_id":"t3eoicpz"}
+{"time":"2025-06-18T11:37:21.027250198+08:00","level":"INFO","msg":"sender: started","stream_id":"t3eoicpz"}
+{"time":"2025-06-18T11:37:21.336466206+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-18T11:40:56.730668353+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":20,"current":21}
+{"time":"2025-06-18T11:44:30.97091702+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":40,"current":41}
+{"time":"2025-06-18T11:48:04.004031449+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":60,"current":61}
+{"time":"2025-06-18T11:51:37.084679971+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":80,"current":81}
+{"time":"2025-06-18T11:51:37.0865517+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-18T11:51:37.086587964+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-18T11:51:37.914947165+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-18T11:51:38.088005405+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 79-79, summary, console lines 265-274","runtime_seconds":0.172894315}],"total_operations":1}}
+{"time":"2025-06-18T11:51:38.153615651+08:00","level":"INFO","msg":"stream: closing","id":"t3eoicpz"}
+{"time":"2025-06-18T11:51:38.153626888+08:00","level":"INFO","msg":"handler: closed","stream_id":"t3eoicpz"}
+{"time":"2025-06-18T11:51:38.153632055+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"t3eoicpz"}
+{"time":"2025-06-18T11:51:38.153634739+08:00","level":"INFO","msg":"sender: closed","stream_id":"t3eoicpz"}
+{"time":"2025-06-18T11:51:38.153741198+08:00","level":"INFO","msg":"stream: closed","id":"t3eoicpz"}

@@ -1,0 +1,409 @@
+Epoch 1/160: 84it [00:10,  7.95it/s]                        
+2025-06-18 10:16:33.559 | INFO     | model:train:239 - [epoch 1]: epoch loss = 2.451475,   acc = 0.154496
+[epoch 1]: epoch loss = 2.451475,   acc = 0.154496
+Epoch 2/160: 84it [00:10,  8.10it/s]                        
+2025-06-18 10:16:44.003 | INFO     | model:train:239 - [epoch 2]: epoch loss = 2.368087,   acc = 0.165828
+[epoch 2]: epoch loss = 2.368087,   acc = 0.165828
+Epoch 3/160: 84it [00:10,  8.20it/s]                        
+2025-06-18 10:16:54.309 | INFO     | model:train:239 - [epoch 3]: epoch loss = 2.319178,   acc = 0.173497
+[epoch 3]: epoch loss = 2.319178,   acc = 0.173497
+Epoch 4/160: 84it [00:10,  7.97it/s]                        
+2025-06-18 10:17:04.921 | INFO     | model:train:239 - [epoch 4]: epoch loss = 2.272462,   acc = 0.183295
+[epoch 4]: epoch loss = 2.272462,   acc = 0.183295
+Epoch 5/160: 84it [00:10,  8.29it/s]                        
+2025-06-18 10:17:15.125 | INFO     | model:train:239 - [epoch 5]: epoch loss = 2.201954,   acc = 0.189311
+[epoch 5]: epoch loss = 2.201954,   acc = 0.189311
+Epoch 6/160: 84it [00:09,  8.45it/s]                        
+2025-06-18 10:17:25.135 | INFO     | model:train:239 - [epoch 6]: epoch loss = 2.086832,   acc = 0.186872
+[epoch 6]: epoch loss = 2.086832,   acc = 0.186872
+Epoch 7/160: 84it [00:10,  7.90it/s]                        
+2025-06-18 10:17:35.830 | INFO     | model:train:239 - [epoch 7]: epoch loss = 1.967867,   acc = 0.286128
+[epoch 7]: epoch loss = 1.967867,   acc = 0.286128
+Epoch 8/160: 84it [00:10,  7.89it/s]                        
+2025-06-18 10:17:46.564 | INFO     | model:train:239 - [epoch 8]: epoch loss = 1.768093,   acc = 0.407172
+[epoch 8]: epoch loss = 1.768093,   acc = 0.407172
+Epoch 9/160: 84it [00:10,  7.80it/s]                        
+2025-06-18 10:17:57.417 | INFO     | model:train:239 - [epoch 9]: epoch loss = 1.655293,   acc = 0.483576
+[epoch 9]: epoch loss = 1.655293,   acc = 0.483576
+Epoch 10/160: 84it [00:10,  7.74it/s]                        
+2025-06-18 10:18:08.359 | INFO     | model:train:239 - [epoch 10]: epoch loss = 1.552749,   acc = 0.532242
+[epoch 10]: epoch loss = 1.552749,   acc = 0.532242
+Epoch 11/160: 84it [00:10,  7.85it/s]                        
+2025-06-18 10:18:19.130 | INFO     | model:train:239 - [epoch 11]: epoch loss = 1.429721,   acc = 0.578561
+[epoch 11]: epoch loss = 1.429721,   acc = 0.578561
+Epoch 12/160: 84it [00:10,  7.99it/s]                        
+2025-06-18 10:18:29.782 | INFO     | model:train:239 - [epoch 12]: epoch loss = 1.380819,   acc = 0.600298
+[epoch 12]: epoch loss = 1.380819,   acc = 0.600298
+Epoch 13/160: 84it [00:10,  7.85it/s]                        
+2025-06-18 10:18:40.557 | INFO     | model:train:239 - [epoch 13]: epoch loss = 1.330847,   acc = 0.621949
+[epoch 13]: epoch loss = 1.330847,   acc = 0.621949
+Epoch 14/160: 84it [00:10,  7.93it/s]                        
+2025-06-18 10:18:51.230 | INFO     | model:train:239 - [epoch 14]: epoch loss = 1.306631,   acc = 0.627732
+[epoch 14]: epoch loss = 1.306631,   acc = 0.627732
+Epoch 15/160: 84it [00:10,  7.87it/s]                        
+2025-06-18 10:19:01.986 | INFO     | model:train:239 - [epoch 15]: epoch loss = 1.255792,   acc = 0.653938
+[epoch 15]: epoch loss = 1.255792,   acc = 0.653938
+Epoch 16/160: 84it [00:10,  7.93it/s]                        
+2025-06-18 10:19:12.659 | INFO     | model:train:239 - [epoch 16]: epoch loss = 1.248911,   acc = 0.648107
+[epoch 16]: epoch loss = 1.248911,   acc = 0.648107
+Epoch 17/160: 84it [00:10,  8.24it/s]                        
+2025-06-18 10:19:22.940 | INFO     | model:train:239 - [epoch 17]: epoch loss = 1.149059,   acc = 0.684977
+[epoch 17]: epoch loss = 1.149059,   acc = 0.684977
+Epoch 18/160: 84it [00:10,  7.75it/s]                        
+2025-06-18 10:19:33.868 | INFO     | model:train:239 - [epoch 18]: epoch loss = 1.106394,   acc = 0.692829
+[epoch 18]: epoch loss = 1.106394,   acc = 0.692829
+Epoch 19/160: 84it [00:10,  7.74it/s]                        
+2025-06-18 10:19:44.806 | INFO     | model:train:239 - [epoch 19]: epoch loss = 1.070441,   acc = 0.709703
+[epoch 19]: epoch loss = 1.070441,   acc = 0.709703
+Epoch 20/160: 84it [00:10,  7.72it/s]                        
+2025-06-18 10:19:55.768 | INFO     | model:train:239 - [epoch 20]: epoch loss = 1.042693,   acc = 0.719404
+[epoch 20]: epoch loss = 1.042693,   acc = 0.719404
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([15853,  6012,  4997,  5453, 11230, 12048,  5767, 11425,   334,
+         698,  1853,  2663]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([12500,  6352,  5202,  6561, 11359, 13990,  7155,  6462,   929,
+        2084,  1059,  4680]))
+2025-06-18 10:19:56.135 | INFO     | model:train:255 - [epoch 20]: val loss = 1.938056,   val acc = 0.605990,   val balanced acc = 0.538222
+[epoch 20]: val loss = 1.938056,   val acc = 0.605990,   val balanced acc = 0.538222
+Epoch 21/160:  63%|██████▎   | 52/82 [00:05<00:03,  8.75it/s]wandb: WARNING Tried to log to step 20 that is less than the current step 21. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Epoch 21/160: 84it [00:10,  8.01it/s]                        
+2025-06-18 10:20:06.760 | INFO     | model:train:239 - [epoch 21]: epoch loss = 1.012230,   acc = 0.732468
+[epoch 21]: epoch loss = 1.012230,   acc = 0.732468
+Epoch 22/160: 84it [00:10,  7.78it/s]                        
+2025-06-18 10:20:17.704 | INFO     | model:train:239 - [epoch 22]: epoch loss = 0.952114,   acc = 0.751727
+[epoch 22]: epoch loss = 0.952114,   acc = 0.751727
+Epoch 23/160: 84it [00:10,  8.11it/s]                        
+2025-06-18 10:20:28.146 | INFO     | model:train:239 - [epoch 23]: epoch loss = 0.945386,   acc = 0.754544
+[epoch 23]: epoch loss = 0.945386,   acc = 0.754544
+Epoch 24/160: 84it [00:10,  7.99it/s]                        
+2025-06-18 10:20:38.744 | INFO     | model:train:239 - [epoch 24]: epoch loss = 0.946336,   acc = 0.752087
+[epoch 24]: epoch loss = 0.946336,   acc = 0.752087
+Epoch 25/160: 84it [00:10,  7.78it/s]                        
+2025-06-18 10:20:49.626 | INFO     | model:train:239 - [epoch 25]: epoch loss = 0.894395,   acc = 0.769117
+[epoch 25]: epoch loss = 0.894395,   acc = 0.769117
+Epoch 26/160: 84it [00:10,  7.75it/s]                        
+2025-06-18 10:21:00.544 | INFO     | model:train:239 - [epoch 26]: epoch loss = 1.008123,   acc = 0.728035
+[epoch 26]: epoch loss = 1.008123,   acc = 0.728035
+Epoch 27/160: 84it [00:10,  7.65it/s]                        
+2025-06-18 10:21:11.637 | INFO     | model:train:239 - [epoch 27]: epoch loss = 0.917168,   acc = 0.763772
+[epoch 27]: epoch loss = 0.917168,   acc = 0.763772
+Epoch 28/160: 84it [00:10,  7.81it/s]                        
+2025-06-18 10:21:23.419 | INFO     | model:train:239 - [epoch 28]: epoch loss = 0.868575,   acc = 0.774028
+[epoch 28]: epoch loss = 0.868575,   acc = 0.774028
+Epoch 29/160: 84it [00:10,  7.86it/s]                        
+2025-06-18 10:21:34.214 | INFO     | model:train:239 - [epoch 29]: epoch loss = 0.819728,   acc = 0.795064
+[epoch 29]: epoch loss = 0.819728,   acc = 0.795064
+Epoch 30/160: 84it [00:10,  7.88it/s]                        
+2025-06-18 10:21:45.000 | INFO     | model:train:239 - [epoch 30]: epoch loss = 0.784952,   acc = 0.803918
+[epoch 30]: epoch loss = 0.784952,   acc = 0.803918
+Epoch 31/160: 84it [00:10,  8.24it/s]                        
+2025-06-18 10:21:55.312 | INFO     | model:train:239 - [epoch 31]: epoch loss = 0.776277,   acc = 0.814666
+[epoch 31]: epoch loss = 0.776277,   acc = 0.814666
+Epoch 32/160: 84it [00:10,  8.15it/s]                        
+2025-06-18 10:22:05.715 | INFO     | model:train:239 - [epoch 32]: epoch loss = 0.740830,   acc = 0.825535
+[epoch 32]: epoch loss = 0.740830,   acc = 0.825535
+Epoch 33/160: 84it [00:10,  7.90it/s]                        
+2025-06-18 10:22:16.455 | INFO     | model:train:239 - [epoch 33]: epoch loss = 0.711120,   acc = 0.832499
+[epoch 33]: epoch loss = 0.711120,   acc = 0.832499
+Epoch 34/160: 84it [00:10,  8.01it/s]                        
+2025-06-18 10:22:27.061 | INFO     | model:train:239 - [epoch 34]: epoch loss = 0.697154,   acc = 0.835137
+[epoch 34]: epoch loss = 0.697154,   acc = 0.835137
+Epoch 35/160: 84it [00:10,  7.93it/s]                        
+2025-06-18 10:22:37.759 | INFO     | model:train:239 - [epoch 35]: epoch loss = 0.731750,   acc = 0.824048
+[epoch 35]: epoch loss = 0.731750,   acc = 0.824048
+Epoch 36/160: 84it [00:10,  7.94it/s]                        
+2025-06-18 10:22:48.446 | INFO     | model:train:239 - [epoch 36]: epoch loss = 0.711068,   acc = 0.832034
+[epoch 36]: epoch loss = 0.711068,   acc = 0.832034
+Epoch 37/160: 84it [00:10,  7.88it/s]                        
+2025-06-18 10:22:59.223 | INFO     | model:train:239 - [epoch 37]: epoch loss = 0.709998,   acc = 0.832353
+[epoch 37]: epoch loss = 0.709998,   acc = 0.832353
+Epoch 38/160: 84it [00:10,  7.81it/s]                        
+2025-06-18 10:23:10.096 | INFO     | model:train:239 - [epoch 38]: epoch loss = 0.671595,   acc = 0.843589
+[epoch 38]: epoch loss = 0.671595,   acc = 0.843589
+Epoch 39/160: 84it [00:10,  8.09it/s]                        
+2025-06-18 10:23:20.589 | INFO     | model:train:239 - [epoch 39]: epoch loss = 0.699346,   acc = 0.836252
+[epoch 39]: epoch loss = 0.699346,   acc = 0.836252
+Epoch 40/160: 84it [00:10,  7.90it/s]                        
+2025-06-18 10:23:31.327 | INFO     | model:train:239 - [epoch 40]: epoch loss = 0.666708,   acc = 0.845907
+[epoch 40]: epoch loss = 0.666708,   acc = 0.845907
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([16408,  6224,  6401,  6457,  9497, 14795,  6899,  6260,  1589,
+        1100,   602,  2101]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([12500,  6352,  5202,  6561, 11359, 13990,  7155,  6462,   929,
+        2084,  1059,  4680]))
+2025-06-18 10:23:31.694 | INFO     | model:train:255 - [epoch 40]: val loss = 1.989004,   val acc = 0.622547,   val balanced acc = 0.542370
+[epoch 40]: val loss = 1.989004,   val acc = 0.622547,   val balanced acc = 0.542370
+Epoch 41/160:   5%|▍         | 4/82 [00:00<00:09,  8.40it/s]wandb: WARNING Tried to log to step 40 that is less than the current step 41. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Epoch 41/160: 84it [00:10,  7.80it/s]                        
+2025-06-18 10:23:42.659 | INFO     | model:train:239 - [epoch 41]: epoch loss = 0.632830,   acc = 0.857507
+[epoch 41]: epoch loss = 0.632830,   acc = 0.857507
+Epoch 42/160: 84it [00:10,  7.85it/s]                        
+2025-06-18 10:23:53.481 | INFO     | model:train:239 - [epoch 42]: epoch loss = 0.604022,   acc = 0.863711
+[epoch 42]: epoch loss = 0.604022,   acc = 0.863711
+Epoch 43/160: 84it [00:10,  7.77it/s]                        
+2025-06-18 10:24:04.416 | INFO     | model:train:239 - [epoch 43]: epoch loss = 0.585025,   acc = 0.870243
+[epoch 43]: epoch loss = 0.585025,   acc = 0.870243
+Epoch 44/160: 84it [00:10,  7.71it/s]                        
+2025-06-18 10:24:15.413 | INFO     | model:train:239 - [epoch 44]: epoch loss = 0.567843,   acc = 0.877886
+[epoch 44]: epoch loss = 0.567843,   acc = 0.877886
+Epoch 45/160: 84it [00:10,  7.69it/s]                        
+2025-06-18 10:24:26.473 | INFO     | model:train:239 - [epoch 45]: epoch loss = 0.549230,   acc = 0.883142
+[epoch 45]: epoch loss = 0.549230,   acc = 0.883142
+Epoch 46/160: 84it [00:10,  7.95it/s]                        
+2025-06-18 10:24:37.184 | INFO     | model:train:239 - [epoch 46]: epoch loss = 0.544017,   acc = 0.886438
+[epoch 46]: epoch loss = 0.544017,   acc = 0.886438
+Epoch 47/160: 84it [00:10,  7.84it/s]                        
+2025-06-18 10:24:48.037 | INFO     | model:train:239 - [epoch 47]: epoch loss = 0.537560,   acc = 0.887038
+[epoch 47]: epoch loss = 0.537560,   acc = 0.887038
+Epoch 48/160: 84it [00:10,  8.06it/s]                        
+2025-06-18 10:24:58.595 | INFO     | model:train:239 - [epoch 48]: epoch loss = 0.531253,   acc = 0.888368
+[epoch 48]: epoch loss = 0.531253,   acc = 0.888368
+Epoch 49/160: 84it [00:10,  8.22it/s]                        
+2025-06-18 10:25:08.949 | INFO     | model:train:239 - [epoch 49]: epoch loss = 0.527905,   acc = 0.891458
+[epoch 49]: epoch loss = 0.527905,   acc = 0.891458
+Epoch 50/160: 84it [00:10,  8.20it/s]                        
+2025-06-18 10:25:19.329 | INFO     | model:train:239 - [epoch 50]: epoch loss = 0.505954,   acc = 0.897581
+[epoch 50]: epoch loss = 0.505954,   acc = 0.897581
+Epoch 51/160: 84it [00:10,  7.85it/s]                        
+2025-06-18 10:25:30.150 | INFO     | model:train:239 - [epoch 51]: epoch loss = 0.522847,   acc = 0.891295
+[epoch 51]: epoch loss = 0.522847,   acc = 0.891295
+Epoch 52/160: 84it [00:09,  8.42it/s]                        
+2025-06-18 10:25:40.293 | INFO     | model:train:239 - [epoch 52]: epoch loss = 0.524962,   acc = 0.891127
+[epoch 52]: epoch loss = 0.524962,   acc = 0.891127
+Epoch 53/160: 84it [00:10,  7.98it/s]                        
+2025-06-18 10:25:50.930 | INFO     | model:train:239 - [epoch 53]: epoch loss = 0.489740,   acc = 0.898968
+[epoch 53]: epoch loss = 0.489740,   acc = 0.898968
+Epoch 54/160: 84it [00:10,  7.97it/s]                        
+2025-06-18 10:26:01.617 | INFO     | model:train:239 - [epoch 54]: epoch loss = 0.493320,   acc = 0.898296
+[epoch 54]: epoch loss = 0.493320,   acc = 0.898296
+Epoch 55/160: 84it [00:10,  7.92it/s]                        
+2025-06-18 10:26:12.348 | INFO     | model:train:239 - [epoch 55]: epoch loss = 0.476090,   acc = 0.903327
+[epoch 55]: epoch loss = 0.476090,   acc = 0.903327
+Epoch 56/160: 84it [00:10,  7.81it/s]                        
+2025-06-18 10:26:23.219 | INFO     | model:train:239 - [epoch 56]: epoch loss = 0.458494,   acc = 0.908697
+[epoch 56]: epoch loss = 0.458494,   acc = 0.908697
+Epoch 57/160: 84it [00:10,  8.01it/s]                        
+2025-06-18 10:26:33.825 | INFO     | model:train:239 - [epoch 57]: epoch loss = 0.454557,   acc = 0.911743
+[epoch 57]: epoch loss = 0.454557,   acc = 0.911743
+Epoch 58/160: 84it [00:10,  8.00it/s]                        
+2025-06-18 10:26:44.436 | INFO     | model:train:239 - [epoch 58]: epoch loss = 0.446065,   acc = 0.913014
+[epoch 58]: epoch loss = 0.446065,   acc = 0.913014
+Epoch 59/160: 84it [00:10,  8.05it/s]                        
+2025-06-18 10:26:55.008 | INFO     | model:train:239 - [epoch 59]: epoch loss = 0.447532,   acc = 0.914213
+[epoch 59]: epoch loss = 0.447532,   acc = 0.914213
+Epoch 60/160: 84it [00:10,  7.87it/s]                        
+2025-06-18 10:27:05.800 | INFO     | model:train:239 - [epoch 60]: epoch loss = 0.434095,   acc = 0.916488
+[epoch 60]: epoch loss = 0.434095,   acc = 0.916488
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([13471,  7251,  4836,  6329,  9961, 17550,  5303,  6507,  2604,
+         352,  4169]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([12500,  6352,  5202,  6561, 11359, 13990,  7155,  6462,   929,
+        2084,  1059,  4680]))
+2025-06-18 10:27:06.130 | INFO     | model:train:255 - [epoch 60]: val loss = 2.146688,   val acc = 0.657488,   val balanced acc = 0.571758
+[epoch 60]: val loss = 2.146688,   val acc = 0.657488,   val balanced acc = 0.571758
+Epoch 61/160:  59%|█████▊    | 48/82 [00:05<00:04,  7.25it/s]wandb: WARNING Tried to log to step 60 that is less than the current step 61. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Epoch 61/160: 84it [00:10,  7.94it/s]                        
+2025-06-18 10:27:16.944 | INFO     | model:train:239 - [epoch 61]: epoch loss = 0.433016,   acc = 0.915972
+[epoch 61]: epoch loss = 0.433016,   acc = 0.915972
+Epoch 62/160: 84it [00:10,  7.88it/s]                        
+2025-06-18 10:27:27.742 | INFO     | model:train:239 - [epoch 62]: epoch loss = 0.425043,   acc = 0.918595
+[epoch 62]: epoch loss = 0.425043,   acc = 0.918595
+Epoch 63/160: 84it [00:10,  7.96it/s]                        
+2025-06-18 10:27:38.779 | INFO     | model:train:239 - [epoch 63]: epoch loss = 0.425147,   acc = 0.918726
+[epoch 63]: epoch loss = 0.425147,   acc = 0.918726
+Epoch 64/160: 84it [00:09,  8.43it/s]                        
+2025-06-18 10:27:48.856 | INFO     | model:train:239 - [epoch 64]: epoch loss = 0.434690,   acc = 0.914909
+[epoch 64]: epoch loss = 0.434690,   acc = 0.914909
+Epoch 65/160: 84it [00:10,  8.17it/s]                        
+2025-06-18 10:27:59.730 | INFO     | model:train:239 - [epoch 65]: epoch loss = 0.416123,   acc = 0.920972
+[epoch 65]: epoch loss = 0.416123,   acc = 0.920972
+Epoch 66/160: 84it [00:10,  7.94it/s]                        
+2025-06-18 10:28:10.506 | INFO     | model:train:239 - [epoch 66]: epoch loss = 0.412902,   acc = 0.921921
+[epoch 66]: epoch loss = 0.412902,   acc = 0.921921
+Epoch 67/160: 84it [00:10,  8.01it/s]                        
+2025-06-18 10:28:21.079 | INFO     | model:train:239 - [epoch 67]: epoch loss = 0.406462,   acc = 0.922391
+[epoch 67]: epoch loss = 0.406462,   acc = 0.922391
+Epoch 68/160: 84it [00:10,  7.97it/s]                        
+2025-06-18 10:28:31.688 | INFO     | model:train:239 - [epoch 68]: epoch loss = 0.397372,   acc = 0.924374
+[epoch 68]: epoch loss = 0.397372,   acc = 0.924374
+Epoch 69/160: 84it [00:10,  7.87it/s]                        
+2025-06-18 10:28:42.435 | INFO     | model:train:239 - [epoch 69]: epoch loss = 0.393491,   acc = 0.926236
+[epoch 69]: epoch loss = 0.393491,   acc = 0.926236
+Epoch 70/160: 84it [00:10,  8.31it/s]                        
+2025-06-18 10:28:52.613 | INFO     | model:train:239 - [epoch 70]: epoch loss = 0.395193,   acc = 0.928903
+[epoch 70]: epoch loss = 0.395193,   acc = 0.928903
+Epoch 71/160: 84it [00:10,  7.78it/s]                        
+2025-06-18 10:29:03.482 | INFO     | model:train:239 - [epoch 71]: epoch loss = 0.385101,   acc = 0.929680
+[epoch 71]: epoch loss = 0.385101,   acc = 0.929680
+Epoch 72/160: 84it [00:10,  7.70it/s]                        
+2025-06-18 10:29:14.493 | INFO     | model:train:239 - [epoch 72]: epoch loss = 0.376001,   acc = 0.930366
+[epoch 72]: epoch loss = 0.376001,   acc = 0.930366
+Epoch 73/160: 84it [00:10,  7.98it/s]                        
+2025-06-18 10:29:25.113 | INFO     | model:train:239 - [epoch 73]: epoch loss = 0.376862,   acc = 0.929821
+[epoch 73]: epoch loss = 0.376862,   acc = 0.929821
+Epoch 74/160: 84it [00:10,  7.84it/s]                        
+2025-06-18 10:29:35.933 | INFO     | model:train:239 - [epoch 74]: epoch loss = 0.381439,   acc = 0.927737
+[epoch 74]: epoch loss = 0.381439,   acc = 0.927737
+Epoch 75/160: 84it [00:10,  7.89it/s]                        
+2025-06-18 10:29:46.670 | INFO     | model:train:239 - [epoch 75]: epoch loss = 0.374114,   acc = 0.930316
+[epoch 75]: epoch loss = 0.374114,   acc = 0.930316
+Epoch 76/160: 84it [00:10,  7.94it/s]                        
+2025-06-18 10:29:57.349 | INFO     | model:train:239 - [epoch 76]: epoch loss = 0.364523,   acc = 0.934024
+[epoch 76]: epoch loss = 0.364523,   acc = 0.934024
+Epoch 77/160: 84it [00:10,  7.90it/s]                        
+2025-06-18 10:30:08.053 | INFO     | model:train:239 - [epoch 77]: epoch loss = 0.358573,   acc = 0.936001
+[epoch 77]: epoch loss = 0.358573,   acc = 0.936001
+Epoch 78/160: 84it [00:10,  7.96it/s]                        
+2025-06-18 10:30:18.675 | INFO     | model:train:239 - [epoch 78]: epoch loss = 0.363134,   acc = 0.934836
+[epoch 78]: epoch loss = 0.363134,   acc = 0.934836
+Epoch 79/160: 84it [00:10,  7.82it/s]                        
+2025-06-18 10:30:29.489 | INFO     | model:train:239 - [epoch 79]: epoch loss = 0.350672,   acc = 0.937780
+[epoch 79]: epoch loss = 0.350672,   acc = 0.937780
+Epoch 80/160: 84it [00:10,  7.82it/s]                        
+2025-06-18 10:30:40.342 | INFO     | model:train:239 - [epoch 80]: epoch loss = 0.348250,   acc = 0.938250
+[epoch 80]: epoch loss = 0.348250,   acc = 0.938250
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([14340,  6244,  4709,  6516, 11711, 14765,  5509,  7895,  2645,
+         252,  3747]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([12500,  6352,  5202,  6561, 11359, 13990,  7155,  6462,   929,
+        2084,  1059,  4680]))
+2025-06-18 10:30:40.697 | INFO     | model:train:255 - [epoch 80]: val loss = 2.665043,   val acc = 0.631330,   val balanced acc = 0.543445
+[epoch 80]: val loss = 2.665043,   val acc = 0.631330,   val balanced acc = 0.543445
+2025-06-18 10:30:40.760 | INFO     | model:train:275 - EarlyStopping counter: 1 out of 3
+EarlyStopping counter: 1 out of 3
+Epoch 81/160:  15%|█▍        | 12/82 [00:01<00:07,  9.09it/s]wandb: WARNING Tried to log to step 80 that is less than the current step 81. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Epoch 81/160: 84it [00:10,  7.86it/s]                        
+2025-06-18 10:30:51.509 | INFO     | model:train:239 - [epoch 81]: epoch loss = 0.343197,   acc = 0.939130
+[epoch 81]: epoch loss = 0.343197,   acc = 0.939130
+Epoch 82/160: 84it [00:10,  8.16it/s]                        
+2025-06-18 10:31:01.948 | INFO     | model:train:239 - [epoch 82]: epoch loss = 0.349534,   acc = 0.938008
+[epoch 82]: epoch loss = 0.349534,   acc = 0.938008
+Epoch 83/160: 84it [00:10,  8.01it/s]                        
+2025-06-18 10:31:12.540 | INFO     | model:train:239 - [epoch 83]: epoch loss = 0.337387,   acc = 0.940137
+[epoch 83]: epoch loss = 0.337387,   acc = 0.940137
+Epoch 84/160: 84it [00:10,  8.21it/s]                        
+2025-06-18 10:31:22.843 | INFO     | model:train:239 - [epoch 84]: epoch loss = 0.342213,   acc = 0.939998
+[epoch 84]: epoch loss = 0.342213,   acc = 0.939998
+Epoch 85/160: 84it [00:10,  7.90it/s]                        
+2025-06-18 10:31:33.547 | INFO     | model:train:239 - [epoch 85]: epoch loss = 0.340046,   acc = 0.940880
+[epoch 85]: epoch loss = 0.340046,   acc = 0.940880
+Epoch 86/160: 84it [00:10,  7.89it/s]                        
+2025-06-18 10:31:44.264 | INFO     | model:train:239 - [epoch 86]: epoch loss = 0.332239,   acc = 0.941351
+[epoch 86]: epoch loss = 0.332239,   acc = 0.941351
+Epoch 87/160: 84it [00:10,  7.85it/s]                        
+2025-06-18 10:31:55.037 | INFO     | model:train:239 - [epoch 87]: epoch loss = 0.325702,   acc = 0.942503
+[epoch 87]: epoch loss = 0.325702,   acc = 0.942503
+Epoch 88/160: 84it [00:10,  7.98it/s]                        
+2025-06-18 10:32:05.664 | INFO     | model:train:239 - [epoch 88]: epoch loss = 0.323698,   acc = 0.944539
+[epoch 88]: epoch loss = 0.323698,   acc = 0.944539
+Epoch 89/160: 84it [00:10,  8.02it/s]                        
+2025-06-18 10:32:16.226 | INFO     | model:train:239 - [epoch 89]: epoch loss = 0.323222,   acc = 0.945124
+[epoch 89]: epoch loss = 0.323222,   acc = 0.945124
+Epoch 90/160: 84it [00:10,  7.99it/s]                        
+2025-06-18 10:32:26.828 | INFO     | model:train:239 - [epoch 90]: epoch loss = 0.325598,   acc = 0.945198
+[epoch 90]: epoch loss = 0.325598,   acc = 0.945198
+Epoch 91/160: 84it [00:10,  7.84it/s]                        
+2025-06-18 10:32:37.630 | INFO     | model:train:239 - [epoch 91]: epoch loss = 0.319324,   acc = 0.944381
+[epoch 91]: epoch loss = 0.319324,   acc = 0.944381
+Epoch 92/160: 84it [00:10,  7.88it/s]                        
+2025-06-18 10:32:48.378 | INFO     | model:train:239 - [epoch 92]: epoch loss = 0.317417,   acc = 0.945795
+[epoch 92]: epoch loss = 0.317417,   acc = 0.945795
+Epoch 93/160: 84it [00:10,  7.80it/s]                        
+2025-06-18 10:32:59.205 | INFO     | model:train:239 - [epoch 93]: epoch loss = 0.312804,   acc = 0.947038
+[epoch 93]: epoch loss = 0.312804,   acc = 0.947038
+Epoch 94/160: 84it [00:10,  8.00it/s]                        
+2025-06-18 10:33:09.778 | INFO     | model:train:239 - [epoch 94]: epoch loss = 0.313223,   acc = 0.947248
+[epoch 94]: epoch loss = 0.313223,   acc = 0.947248
+Epoch 95/160: 84it [00:10,  7.96it/s]                        
+2025-06-18 10:33:20.401 | INFO     | model:train:239 - [epoch 95]: epoch loss = 0.310034,   acc = 0.948209
+[epoch 95]: epoch loss = 0.310034,   acc = 0.948209
+Epoch 96/160: 84it [00:10,  7.68it/s]                        
+2025-06-18 10:33:31.411 | INFO     | model:train:239 - [epoch 96]: epoch loss = 0.308906,   acc = 0.947561
+[epoch 96]: epoch loss = 0.308906,   acc = 0.947561
+Epoch 97/160: 84it [00:10,  7.71it/s]                        
+2025-06-18 10:33:42.366 | INFO     | model:train:239 - [epoch 97]: epoch loss = 0.307616,   acc = 0.948037
+[epoch 97]: epoch loss = 0.307616,   acc = 0.948037
+Epoch 98/160: 84it [00:10,  7.74it/s]                        
+2025-06-18 10:33:53.289 | INFO     | model:train:239 - [epoch 98]: epoch loss = 0.305893,   acc = 0.948567
+[epoch 98]: epoch loss = 0.305893,   acc = 0.948567
+Epoch 99/160: 84it [00:10,  8.00it/s]                        
+2025-06-18 10:34:03.903 | INFO     | model:train:239 - [epoch 99]: epoch loss = 0.302632,   acc = 0.949550
+[epoch 99]: epoch loss = 0.302632,   acc = 0.949550
+Epoch 100/160: 84it [00:10,  7.72it/s]                        
+2025-06-18 10:34:14.904 | INFO     | model:train:239 - [epoch 100]: epoch loss = 0.294822,   acc = 0.951316
+[epoch 100]: epoch loss = 0.294822,   acc = 0.951316
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([15676,  7353,  4351,  5596, 10817, 16042,  6174,  6936,  2100,
+         189,  3099]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([12500,  6352,  5202,  6561, 11359, 13990,  7155,  6462,   929,
+        2084,  1059,  4680]))
+2025-06-18 10:34:15.246 | INFO     | model:train:255 - [epoch 100]: val loss = 2.621125,   val acc = 0.628509,   val balanced acc = 0.524723
+[epoch 100]: val loss = 2.621125,   val acc = 0.628509,   val balanced acc = 0.524723
+2025-06-18 10:34:15.284 | INFO     | model:train:275 - EarlyStopping counter: 2 out of 3
+EarlyStopping counter: 2 out of 3
+Epoch 101/160:  63%|██████▎   | 52/82 [00:07<00:03,  8.03it/s]wandb: WARNING Tried to log to step 100 that is less than the current step 101. Steps must be monotonically increasing, so this data will be ignored. See https://wandb.me/define-metric to log data out of order.
+Epoch 101/160: 84it [00:10,  7.82it/s]                        
+2025-06-18 10:34:26.138 | INFO     | model:train:239 - [epoch 101]: epoch loss = 0.293339,   acc = 0.951719
+[epoch 101]: epoch loss = 0.293339,   acc = 0.951719
+Epoch 102/160: 84it [00:10,  7.85it/s]                        
+2025-06-18 10:34:36.961 | INFO     | model:train:239 - [epoch 102]: epoch loss = 0.294240,   acc = 0.951563
+[epoch 102]: epoch loss = 0.294240,   acc = 0.951563
+Epoch 103/160: 84it [00:10,  8.05it/s]                        
+2025-06-18 10:34:47.501 | INFO     | model:train:239 - [epoch 103]: epoch loss = 0.300734,   acc = 0.952078
+[epoch 103]: epoch loss = 0.300734,   acc = 0.952078
+Epoch 104/160: 84it [00:10,  7.82it/s]                        
+2025-06-18 10:34:58.352 | INFO     | model:train:239 - [epoch 104]: epoch loss = 0.290859,   acc = 0.952732
+[epoch 104]: epoch loss = 0.290859,   acc = 0.952732
+Epoch 105/160: 84it [00:10,  8.06it/s]                        
+2025-06-18 10:35:08.880 | INFO     | model:train:239 - [epoch 105]: epoch loss = 0.294328,   acc = 0.952204
+[epoch 105]: epoch loss = 0.294328,   acc = 0.952204
+Epoch 106/160: 84it [00:10,  8.04it/s]                        
+2025-06-18 10:35:19.435 | INFO     | model:train:239 - [epoch 106]: epoch loss = 0.289576,   acc = 0.953023
+[epoch 106]: epoch loss = 0.289576,   acc = 0.953023
+Epoch 107/160: 84it [00:10,  8.02it/s]                        
+2025-06-18 10:35:30.012 | INFO     | model:train:239 - [epoch 107]: epoch loss = 0.288032,   acc = 0.953278
+[epoch 107]: epoch loss = 0.288032,   acc = 0.953278
+Epoch 108/160: 84it [00:10,  8.03it/s]                        
+2025-06-18 10:35:40.601 | INFO     | model:train:239 - [epoch 108]: epoch loss = 0.285157,   acc = 0.954040
+[epoch 108]: epoch loss = 0.285157,   acc = 0.954040
+Epoch 109/160: 84it [00:10,  7.96it/s]                        
+2025-06-18 10:35:51.273 | INFO     | model:train:239 - [epoch 109]: epoch loss = 0.284429,   acc = 0.953924
+[epoch 109]: epoch loss = 0.284429,   acc = 0.953924
+Epoch 110/160: 84it [00:10,  8.35it/s]                        
+2025-06-18 10:36:01.477 | INFO     | model:train:239 - [epoch 110]: epoch loss = 0.286286,   acc = 0.953333
+[epoch 110]: epoch loss = 0.286286,   acc = 0.953333
+Epoch 111/160: 84it [00:10,  8.07it/s]                        
+2025-06-18 10:36:12.004 | INFO     | model:train:239 - [epoch 111]: epoch loss = 0.281157,   acc = 0.954398
+[epoch 111]: epoch loss = 0.281157,   acc = 0.954398
+Epoch 112/160: 84it [00:10,  7.96it/s]                        
+2025-06-18 10:36:22.704 | INFO     | model:train:239 - [epoch 112]: epoch loss = 0.279692,   acc = 0.954938
+[epoch 112]: epoch loss = 0.279692,   acc = 0.954938
+Epoch 113/160: 84it [00:10,  7.94it/s]                        
+2025-06-18 10:36:33.410 | INFO     | model:train:239 - [epoch 113]: epoch loss = 0.280819,   acc = 0.954537
+[epoch 113]: epoch loss = 0.280819,   acc = 0.954537
+Epoch 114/160: 84it [00:10,  7.91it/s]                        
+2025-06-18 10:36:44.165 | INFO     | model:train:239 - [epoch 114]: epoch loss = 0.277016,   acc = 0.954874
+[epoch 114]: epoch loss = 0.277016,   acc = 0.954874
+Epoch 115/160: 84it [00:10,  8.10it/s]                        
+2025-06-18 10:36:54.676 | INFO     | model:train:239 - [epoch 115]: epoch loss = 0.281720,   acc = 0.955082
+[epoch 115]: epoch loss = 0.281720,   acc = 0.955082
+Epoch 116/160: 84it [00:10,  7.99it/s]                        
+2025-06-18 10:37:05.298 | INFO     | model:train:239 - [epoch 116]: epoch loss = 0.277435,   acc = 0.955425
+[epoch 116]: epoch loss = 0.277435,   acc = 0.955425
+Epoch 117/160: 84it [00:10,  8.14it/s]                        
+2025-06-18 10:37:15.756 | INFO     | model:train:239 - [epoch 117]: epoch loss = 0.276517,   acc = 0.956006
+[epoch 117]: epoch loss = 0.276517,   acc = 0.956006
+Epoch 118/160: 84it [00:10,  8.04it/s]                        
+2025-06-18 10:37:26.345 | INFO     | model:train:239 - [epoch 118]: epoch loss = 0.272807,   acc = 0.956549
+[epoch 118]: epoch loss = 0.272807,   acc = 0.956549
+Epoch 119/160: 84it [00:10,  8.22it/s]                        
+2025-06-18 10:37:36.705 | INFO     | model:train:239 - [epoch 119]: epoch loss = 0.273016,   acc = 0.956594
+[epoch 119]: epoch loss = 0.273016,   acc = 0.956594
+Epoch 120/160: 84it [00:10,  8.15it/s]                        
+2025-06-18 10:37:47.154 | INFO     | model:train:239 - [epoch 120]: epoch loss = 0.274173,   acc = 0.956859
+[epoch 120]: epoch loss = 0.274173,   acc = 0.956859
+Predicted labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  9, 10, 11]), array([15241,  6926,  4702,  5552, 11149, 15893,  6175,  6963,  2311,
+         309,  3112]))
+True labels distribution: (array([ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10, 11]), array([12500,  6352,  5202,  6561, 11359, 13990,  7155,  6462,   929,
+        2084,  1059,  4680]))
+2025-06-18 10:37:47.493 | INFO     | model:train:255 - [epoch 120]: val loss = 2.461462,   val acc = 0.626441,   val balanced acc = 0.523959
+[epoch 120]: val loss = 2.461462,   val acc = 0.626441,   val balanced acc = 0.523959
+2025-06-18 10:37:47.527 | INFO     | model:train:275 - EarlyStopping counter: 3 out of 3
+EarlyStopping counter: 3 out of 3
+2025-06-18 10:37:47.528 | INFO     | model:train:277 - Early stopping triggered.
+Early stopping triggered.

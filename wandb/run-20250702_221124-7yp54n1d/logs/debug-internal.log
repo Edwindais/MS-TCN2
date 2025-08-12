@@ -1,0 +1,21 @@
+{"time":"2025-07-02T22:11:24.927674729+08:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/mnt/hdd2/Projects_dai/Projects_dai/MS-TCN2_dai/wandb/run-20250702_221124-7yp54n1d/logs/debug-core.log"}
+{"time":"2025-07-02T22:11:25.241580974+08:00","level":"INFO","msg":"stream: created new stream","id":"7yp54n1d"}
+{"time":"2025-07-02T22:11:25.241622817+08:00","level":"INFO","msg":"stream: started","id":"7yp54n1d"}
+{"time":"2025-07-02T22:11:25.241638661+08:00","level":"INFO","msg":"sender: started","stream_id":"7yp54n1d"}
+{"time":"2025-07-02T22:11:25.241649728+08:00","level":"INFO","msg":"handler: started","stream_id":"7yp54n1d"}
+{"time":"2025-07-02T22:11:25.241641065+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"7yp54n1d"}
+{"time":"2025-07-02T22:11:25.569458018+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-02T22:14:21.364612787+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":20,"current":21}
+{"time":"2025-07-02T22:19:00.497502612+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":40,"current":41}
+{"time":"2025-07-02T22:24:51.704913559+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":60,"current":61}
+{"time":"2025-07-02T22:29:43.354992546+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":80,"current":81}
+{"time":"2025-07-02T22:32:37.721678653+08:00","level":"WARN","msg":"handler: ignoring partial history record","step":100,"current":101}
+{"time":"2025-07-02T22:32:37.723221495+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-02T22:32:37.723248445+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-02T22:32:38.517111273+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-02T22:32:38.724977942+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading history steps 97-99, summary, console lines 332-347","runtime_seconds":0.207707219}],"total_operations":1}}
+{"time":"2025-07-02T22:32:38.789603143+08:00","level":"INFO","msg":"stream: closing","id":"7yp54n1d"}
+{"time":"2025-07-02T22:32:38.789615021+08:00","level":"INFO","msg":"handler: closed","stream_id":"7yp54n1d"}
+{"time":"2025-07-02T22:32:38.78962113+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"7yp54n1d"}
+{"time":"2025-07-02T22:32:38.789640208+08:00","level":"INFO","msg":"sender: closed","stream_id":"7yp54n1d"}
+{"time":"2025-07-02T22:32:38.789678236+08:00","level":"INFO","msg":"stream: closed","id":"7yp54n1d"}

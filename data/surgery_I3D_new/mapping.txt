@@ -1,0 +1,12 @@
+0 Other
+1 Picking-up_the_needle
+2 Adjusting_the_needle_tip
+3 Moving_to_the_entry_point
+4 Pushing_the_needle_through_the_tissue
+5 Pulling_the_needle_out_of_the_tissue
+6 Organizing_the_thread
+7 Applying_a_hem-o-lock
+8 Tying_a_knot
+9 Cutting_the_suture
+10 Returning_the_needle
+11 Unclamping_the_artery
